@@ -1,0 +1,73 @@
+---
+name: uiux-design-standard
+description: Apply professional, accessible, ethical, and data-aware UI/UX standards when planning, generating, reviewing, or improving interfaces, dashboards, design systems, wireframes, prototypes, and frontend implementations. Use for UI/UX decisions, interface audits, dashboard hierarchy, information architecture, interaction behavior, accessibility, responsive behavior, content design, data visualization, and design QA.
+---
+
+# UI/UX Design Standard
+
+## Objective
+
+Apply the UIXSenseee standards consistently without substituting visual trends for user needs, usability, accessibility, or honest data communication.
+
+## Required inputs
+
+Before producing or reviewing a design, identify when available:
+
+- target users;
+- primary user goals and tasks;
+- product and data context;
+- supported devices and interaction modes;
+- accessibility requirements;
+- risks, constraints, and success criteria.
+
+Mark missing information as an assumption. Do not silently invent business requirements.
+
+## Core workflow
+
+1. Identify the user, goal, task, and decision context.
+2. Read `references/00-foundation-principles.md`.
+3. Read only the topic references relevant to the task.
+4. Apply every relevant MUST and MUST NOT rule.
+5. Apply SHOULD rules unless a documented reason prevents it.
+6. Run the relevant checklist.
+7. Report failures by rule ID and severity.
+8. Document exceptions, risks, and mitigations.
+9. Do not declare a design conformant while a Critical or unresolved Major issue remains.
+
+## Reference selection
+
+- Information structure, navigation, hierarchy, labels, findability: `references/01-information-architecture.md`
+- General design review: `checklists/design-review.md`
+- Release decision: `checklists/release-gate.md`
+
+Additional reference files will be added as their standards are approved.
+
+## Rule precedence
+
+When rules conflict, use this order:
+
+1. User safety and prevention of harm
+2. User rights, privacy, and control
+3. Accessibility
+4. Task completion
+5. Honest information and data representation
+6. Clarity
+7. Consistency
+8. Efficiency
+9. Aesthetics
+
+## Expected output
+
+When reviewing a design, provide:
+
+- summary and scope;
+- assumptions;
+- findings grouped by severity;
+- affected rule IDs;
+- recommended corrections;
+- exceptions and residual risks;
+- final result: Pass, Conditional Pass, or Fail.
+
+## Exceptions
+
+A MUST rule may be overridden only when a higher-priority rule conflicts with it or evidence demonstrates a necessary constraint. Record the affected rule, evidence, users, risks, mitigation, owner, and review date using `templates/exception-request-template.md`.
