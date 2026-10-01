@@ -6,6 +6,7 @@
 
 - IA-003: Use clear, descriptive, and consistent labels.
 - IA-004: Provide effective wayfinding.
+- IA-005: Separate navigation, search, filter, and sort.
 
 ## 0.1.0-draft — 2026-10-01
 

@@ -1,7 +1,7 @@
 # Information Architecture
 
 - **Document ID:** UIXS-IA
-- **Version:** 0.2.0
+- **Version:** 0.3.0
 - **Status:** Draft
 - **Related standards:** FP, CT, AX, RS, QA
 
@@ -279,9 +279,78 @@ Single-page products, short linear flows, security constraints, embedded context
 
 Fail when users cannot identify page or scope, no route back exists, drill-down silently discards context, direct links lack orientation, or users can act on the wrong workspace. Otherwise, all MUST requirements and documented exceptions determine conformance.
 
+---
+
+## IA-005 — Separate navigation, search, filter, and sort
+
+**Level:** MUST  
+**Status:** Draft  
+**Related:** FP-002, FP-007, FP-008, IA-P02, IA-P03, IA-P04
+
+### Rule
+
+Navigation, search, filter, and sort MUST have distinct purposes, labels, states, and outcomes so users can predict whether an interaction changes location, finds items, narrows a collection, or changes order.
+
+### Functional definitions
+
+- **Navigation** changes location or information context.
+- **Search** retrieves items that match a query.
+- **Filter** narrows a known collection by attributes.
+- **Sort** changes the order of the same collection.
+
+### Requirements
+
+- **IA-005-A — Navigation changes location — MUST.** Navigation items represent destinations, not commands or filter values.
+- **IA-005-B — Search matches a query — MUST.** Search identifies its scope and returns matching items without silently changing unrelated filters.
+- **IA-005-C — Filter narrows a collection — MUST.** Filters operate on clearly defined dimensions and do not silently navigate to a different information area.
+- **IA-005-D — Sort changes order only — MUST.** Sorting must not add or remove records, change the metric definition, or alter scope.
+- **IA-005-E — Distinguish controls — MUST.** Labels, placement, states, and visual treatment must make navigation, search, filter, and sort distinguishable.
+- **IA-005-F — Communicate scope — MUST.** Users must know whether search or filtering applies globally, to the current page, table, chart, workspace, or dataset.
+- **IA-005-G — Show active state — MUST.** Display the query, active filters, result count where useful, and current sort. Active filters must be individually removable.
+- **IA-005-H — Provide reset behavior — MUST.** Users must be able to clear query and filters predictably. Reset must not remove unrelated preferences or change scope without notice.
+- **IA-005-I — Preserve state appropriately — SHOULD.** Keep relevant query, filters, and sort through detail views, refresh, pagination, and return navigation.
+- **IA-005-J — Explain zero results — MUST.** Distinguish an empty dataset, no query matches, no filter matches, loading failure, and permission limits. Offer a relevant recovery action.
+- **IA-005-K — Separate commands — MUST.** Actions such as Export, Create, Delete, and Refresh are commands and must not be disguised as navigation, filters, or sort options.
+- **IA-005-L — Support shareable analytical state — SHOULD.** Important dashboard or analysis states should be reproducible through a stable link, saved view, or explicit state summary when privacy permits.
+- **IA-005-M — Avoid ambiguous combined controls — SHOULD NOT.** A single control should not mix navigation, command execution, search, and filtering unless modes and outcomes are explicit.
+- **IA-005-N — Make controls accessible — MUST.** Controls require persistent labels, keyboard operation, announced active states, and a logical focus order. Placeholder text is not a sufficient label.
+
+### Search policy
+
+Search MUST state or imply its scope, support clear submission behavior, preserve the query on results, and distinguish suggestions from final results. Global and local search must not appear identical when their scopes differ. Search results should expose enough context to distinguish similar items.
+
+### Filter policy
+
+Filter labels identify dimensions; options identify values. Global and local filters must be visually and semantically distinguishable. Applied filters must remain visible, and dependent filters must disclose when one choice limits another. Missing values must not be silently treated as zero or “Other.”
+
+### Sort policy
+
+Sort options identify both field and direction when ambiguity exists, such as “Updated: newest first” or “Backlog: highest first.” Default order should be meaningful and documented for critical lists. Sorting a paginated collection must apply to the whole result set, not only the visible page.
+
+### Validation
+
+Test each control by asking users to predict its outcome before activation. Verify scope, active-state visibility, reset behavior, zero-result recovery, detail-and-return persistence, keyboard operation, and consistency across responsive layouts. Compare record membership before and after sorting to confirm that only order changed.
+
+### Exceptions
+
+Command palettes and unified search MAY combine navigation and actions when result types are clearly labeled and outcomes are previewed. Compact layouts MAY collapse filters into a drawer, but active filters and scope must remain visible outside it.
+
+### Failure examples
+
+- A navigation tab used to filter a table without communicating the behavior.
+- Search that silently searches only the visible page.
+- Sort that changes metric definition or record membership.
+- A generic “All” option with unclear scope.
+- Active filters hidden inside a closed drawer.
+- Reset that also clears date range, workspace, or user preferences unexpectedly.
+- “No data” used for query mismatch, permission denial, and server failure alike.
+
+### Acceptance
+
+Fail when control purpose or scope is ambiguous, sorting changes membership, active filtering is hidden, zero states misrepresent the cause, or reset causes undisclosed data-context changes. Otherwise, all MUST requirements and documented exceptions determine conformance.
+
 ## Planned rules
 
-- IA-005 — Separate navigation, search, filter, and sort.
 - IA-006 — Preserve context across navigation.
 - IA-007 — Apply progressive disclosure without hiding critical information.
 - IA-008 — Design scalable taxonomies.

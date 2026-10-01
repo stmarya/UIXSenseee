@@ -16,6 +16,11 @@
 - [ ] Current location is visible without relying on color alone.
 - [ ] Detail views provide a route back.
 - [ ] Filters, sort, time range, and scope survive drill-down when appropriate.
+- [ ] Navigation, search, filter, sort, and commands have distinct purposes.
+- [ ] Search and filter scope are visible.
+- [ ] Active query, filters, and sort are visible and resettable.
+- [ ] Empty, no-results, permission, and error states are distinguished.
+- [ ] Sorting changes order only, not collection membership.
 - [ ] Categories at the same level have distinct meanings.
 - [ ] Heading hierarchy matches content hierarchy.
 - [ ] Exceptions are documented.
