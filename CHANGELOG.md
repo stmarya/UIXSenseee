@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+### Added
+
+- IA-003: Use clear, descriptive, and consistent labels.
+- IA-004: Provide effective wayfinding.
+
 ## 0.1.0-draft — 2026-10-01
 
 ### Added

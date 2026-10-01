@@ -1,7 +1,7 @@
 # Information Architecture
 
 - **Document ID:** UIXS-IA
-- **Version:** 0.1.0
+- **Version:** 0.2.0
 - **Status:** Draft
 - **Related standards:** FP, CT, AX, RS, QA
 
@@ -152,10 +152,135 @@ Exceptions MAY be accepted for regulated taxonomies, established expert-domain s
 
 Fail when users cannot identify location, parent–child relationships mislead, drill-down silently changes scope, detail lacks a route back, or primary categories cannot be distinguished. Conditional Pass may be used for justified non-blocking SHOULD issues. Otherwise Pass.
 
+---
+
+## IA-003 — Use clear, descriptive, and consistent labels
+
+**Level:** MUST  
+**Status:** Draft  
+**Related:** FP-002, FP-007, FP-008, IA-P02, IA-P03, IA-P05
+
+### Rule
+
+Labels MUST clearly and consistently communicate the meaning, destination, scope, or result of the element they represent.
+
+### Rationale
+
+Users use labels to predict destinations, actions, affected data, scope, and consequences. Weak labels force users to guess, inspect several destinations, or recover from avoidable mistakes.
+
+### Requirements
+
+- **IA-003-A — Use user language — MUST.** Prefer terms recognized by the intended users. Internal jargon and uncommon acronyms require explanation or evidence of familiarity.
+- **IA-003-B — Describe destination or result — MUST.** Navigation labels identify locations; action labels identify actions and affected objects.
+- **IA-003-C — Use one term for one concept — MUST.** Do not rotate synonyms for stylistic variety. Maintain a glossary for important domain terms.
+- **IA-003-D — Distinguish sibling labels — MUST.** Categories at the same level must have differences users can explain.
+- **IA-003-E — Remain understandable out of context — SHOULD.** Labels used in search, notifications, favorites, history, and breadcrumbs should identify their object or area.
+- **IA-003-F — Front-load meaningful words — SHOULD.** Put the differentiating words early, especially in scannable lists and narrow layouts.
+- **IA-003-G — Be concise but complete — SHOULD.** Do not shorten a label until its object, scope, period, or distinguishing meaning is lost.
+- **IA-003-H — Use action-oriented labels — MUST.** Prefer verb + object, such as “Create report” or “Apply filters.”
+- **IA-003-I — Name destructive consequences — MUST.** Use “Delete dashboard,” “Archive report,” or “Discard changes,” not “Confirm” or “Proceed.”
+- **IA-003-J — Label filter dimension and scope — MUST.** Prefer “All teams,” “Select region,” and “Incident status” over “All,” “Select,” or “Type.”
+- **IA-003-K — State units and time context — MUST.** Data labels include units, period, or calculation basis when needed for correct interpretation.
+- **IA-003-L — Label ambiguous icons — MUST.** Icon-only controls are acceptable only when meaning is conventional, risk is low, and an accessible name exists.
+- **IA-003-M — Match visible and accessible labels — MUST.** The accessible name must contain and align with the visible label.
+- **IA-003-N — Support localization — SHOULD.** Avoid wordplay, string fragments, overly narrow containers, and truncation that removes the differentiator.
+- **IA-003-O — Use consistent capitalization and grammar — SHOULD.** Capitalization must not be the only hierarchy cue.
+- **IA-003-P — Do not mislead — MUST NOT.** The stated destination, action, cost, or result must match the actual behavior.
+
+### Terminology governance
+
+For important terms, record the preferred term, definition, discouraged alternatives, and usage context. Changes must be applied across navigation, content, filters, metrics, statuses, and support material.
+
+### Validation
+
+Use label-comprehension tests, first-click tests, terminology inventories, sibling-differentiation tests, out-of-context tests, and localization stress tests with longer strings and different formats.
+
+### Exceptions
+
+Technical, legal, or regulated terms MAY be retained for expert audiences. Compact icon-only labels MAY be used when evidence shows low ambiguity and accessible naming remains complete. Migration exceptions require a time limit.
+
+### Failure examples
+
+- Generic labels such as “More,” “Other,” “Manage,” or “View.”
+- Several names for the same object.
+- “Confirm” for a destructive action.
+- A “Delete” label that actually archives an item.
+- Metrics without units, period, or scope.
+- Truncation that hides the distinguishing part of similar labels.
+
+### Acceptance
+
+Fail when labels hide consequences, primary sibling categories cannot be distinguished, visible and accessible names conflict, or the stated result differs from actual behavior. Otherwise, all MUST requirements and documented exceptions determine conformance.
+
+---
+
+## IA-004 — Provide effective wayfinding
+
+**Level:** MUST  
+**Status:** Draft  
+**Related:** FP-002, FP-007, FP-008, FP-009, IA-P02, IA-P04
+
+### Rule
+
+The interface MUST provide sufficient wayfinding cues for users to understand their current location, available destinations, navigation history, and route back to a meaningful context.
+
+### Rationale
+
+Users may enter through navigation, search, notifications, bookmarks, shared links, or browser history. Every important destination must remain understandable without requiring entry through the home page.
+
+### Requirements
+
+- **IA-004-A — Display a clear page title — MUST.** Titles identify the page, object, or task and remain understandable through direct entry.
+- **IA-004-B — Indicate active navigation — MUST.** Use more than color alone and communicate current state semantically.
+- **IA-004-C — Show current scope — MUST.** Workspace, organization, project, environment, region, dataset, or other risk-relevant scope must be visible and must not change silently.
+- **IA-004-D — Use breadcrumbs for hierarchy — SHOULD.** Breadcrumbs represent structural location from general to specific; they do not replace page titles or step indicators.
+- **IA-004-E — Provide contextual back navigation — MUST.** Prefer “Return to filtered results” or “Back to team performance” over a generic “Back.”
+- **IA-004-F — Distinguish hierarchy from history — MUST.** Breadcrumbs show structure; contextual back links show the prior working context.
+- **IA-004-G — Preserve return context — MUST.** Keep relevant filter, sort, search, pagination, date range, tab, selection, and scroll state.
+- **IA-004-H — Orient deep-link entry — MUST.** Direct entry shows object identity, parent area, active scope, status, and a route to the parent where relevant.
+- **IA-004-I — Communicate level transitions — SHOULD.** Maintain titles, selected objects, filters, or other cues when moving between overview and detail.
+- **IA-004-J — Keep navigation placement predictable — MUST.** Structural navigation must not reorder itself dynamically; shortcuts and recent items remain separate.
+- **IA-004-K — Distinguish navigation levels — MUST.** Global navigation, local navigation, tabs, breadcrumbs, in-page navigation, related links, and actions must not appear equivalent.
+- **IA-004-L — Make destination changes visible — MUST.** Page title, active state, content, focus, loading, or assistive announcement must show that navigation occurred.
+- **IA-004-M — Support new-tab and deep-link contexts — SHOULD.** Stable destinations retain identity, scope, and permission feedback outside the originating tab.
+- **IA-004-N — Orient long pages — SHOULD.** Use headings, table of contents, in-page navigation, or progress cues without allowing sticky elements to obscure content.
+- **IA-004-O — Adapt for small screens — MUST.** Preserve page title, parent context, critical scope, active state, and a route back even when full breadcrumbs are collapsed.
+- **IA-004-P — Make wayfinding accessible — MUST.** Navigation regions need distinguishable names; current page, current step, focus order, breadcrumbs, and dynamic changes must be available to assistive technology.
+
+### Pattern selection
+
+- Global navigation: product-level areas.
+- Local navigation: destinations within one area.
+- Breadcrumb: structural hierarchy.
+- Tabs: peer views of the same object or context.
+- Step indicator: ordered process.
+- Master–detail: list and selected detail in shared context.
+- Contextual back link: return to a prior filtered or searched working state.
+
+### Validation
+
+Run direct-entry, location-identification, return-path, multi-entry, permission, responsive, keyboard, and screen-reader tests. A user should be able to identify the page, parent, scope, next destinations, and route back.
+
+### Exceptions
+
+Single-page products, short linear flows, security constraints, embedded contexts, or narrow screens MAY simplify wayfinding, but users must still recognize the page, critical scope, and route out or back.
+
+### Failure examples
+
+- No active navigation state or a color-only state.
+- Breadcrumbs used as visit history.
+- Generic “Back” links that discard filters.
+- Hidden workspace or environment scope.
+- Navigation items that move dynamically.
+- Deep-linked pages without titles or parent context.
+- Mobile layouts that remove all location cues.
+
+### Acceptance
+
+Fail when users cannot identify page or scope, no route back exists, drill-down silently discards context, direct links lack orientation, or users can act on the wrong workspace. Otherwise, all MUST requirements and documented exceptions determine conformance.
+
 ## Planned rules
 
-- IA-003 — Use clear, descriptive, and consistent labels.
-- IA-004 — Provide effective wayfinding.
 - IA-005 — Separate navigation, search, filter, and sort.
 - IA-006 — Preserve context across navigation.
 - IA-007 — Apply progressive disclosure without hiding critical information.
