@@ -16,6 +16,12 @@
 - [ ] Current location is visible without relying on color alone.
 - [ ] Detail views provide a route back.
 - [ ] Filters, sort, time range, and scope survive drill-down when appropriate.
+- [ ] Relevant context is classified as persistent, resettable, transient, or sensitive.
+- [ ] Scope changes visibly reset only incompatible dependent state.
+- [ ] Browser back, forward, and refresh preserve a coherent state.
+- [ ] Unsaved meaningful work is protected.
+- [ ] Sensitive state is not exposed in shareable URLs or durable UI state.
+- [ ] Restored state remains visible, including on small screens.
 - [ ] Navigation, search, filter, sort, and commands have distinct purposes.
 - [ ] Search and filter scope are visible.
 - [ ] Active query, filters, and sort are visible and resettable.

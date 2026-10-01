@@ -1,7 +1,7 @@
 # Information Architecture
 
 - **Document ID:** UIXS-IA
-- **Version:** 0.3.0
+- **Version:** 0.4.0
 - **Status:** Draft
 - **Related standards:** FP, CT, AX, RS, QA
 
@@ -349,8 +349,90 @@ Command palettes and unified search MAY combine navigation and actions when resu
 
 Fail when control purpose or scope is ambiguous, sorting changes membership, active filtering is hidden, zero states misrepresent the cause, or reset causes undisclosed data-context changes. Otherwise, all MUST requirements and documented exceptions determine conformance.
 
+---
+
+## IA-006 — Preserve context across navigation
+
+**Level:** MUST  
+**Status:** Draft  
+**Related:** FP-002, FP-009, FP-011, IA-P02, IA-P04, IA-P07
+
+### Rule
+
+The interface MUST preserve, restore, or explicitly reset relevant user context across navigation so users can continue a task without reconstructing their previous state or acting within an unintended scope.
+
+### Rationale
+
+Context includes where users are, what data they are viewing, how a collection is configured, and what work is in progress. Silent context loss causes repeated work, incorrect interpretation, and actions on the wrong workspace, period, or dataset.
+
+### Context classes
+
+- **Structural:** workspace, organization, project, environment, area, parent object.
+- **Analytical:** date range, filters, query, sort, metric, comparison, aggregation, timezone.
+- **Interaction:** tab, pagination, expanded groups, selected row, scroll position, display mode.
+- **Work-in-progress:** form values, draft content, unsaved configuration.
+- **Transient:** tooltip, temporary toast, hover, short-lived preview.
+- **Sensitive:** secrets, credentials, private query terms, or restricted identifiers.
+
+### Requirements
+
+- **IA-006-A — Identify relevant context — MUST.** For every flow, document which state must persist, may persist, must reset, and must never persist.
+- **IA-006-B — Preserve list-to-detail context — MUST.** Returning from detail restores relevant query, filters, sort, pagination, selected view, and date range.
+- **IA-006-C — Preserve analytical scope — MUST.** Drill-down retains or explicitly transforms period, timezone, population, metric definition, comparison, and aggregation.
+- **IA-006-D — Show active context — MUST.** Restored filters, scopes, and non-default state remain visible; persistence must not create hidden state.
+- **IA-006-E — Reset dependent state explicitly — MUST.** When workspace, dataset, or another parent scope changes, incompatible state may reset only with clear feedback and a safe resulting state.
+- **IA-006-F — Make reset predictable — MUST.** “Reset filters” removes filter state only unless broader effects are named. Reset must not silently change workspace, permissions, timezone, or user preferences.
+- **IA-006-G — Use appropriate persistence duration — SHOULD.** Choose URL, session, account preference, or no persistence according to user value, privacy, expected duration, and collaboration needs.
+- **IA-006-H — Support browser navigation — MUST.** Back, forward, refresh, and direct reload must not produce contradictory or unexpectedly destructive state.
+- **IA-006-I — Preserve work in progress — MUST.** Validation, temporary navigation, or recoverable interruption must not discard user input. Warn before leaving when meaningful unsaved work would be lost.
+- **IA-006-J — Do not persist unsafe state — MUST NOT.** Do not place secrets, credentials, sensitive personal data, or unsafe one-time actions in shareable URLs or durable client state.
+- **IA-006-K — Handle stale restored state — MUST.** If restored objects, filters, permissions, or data are no longer valid, explain what changed and provide recovery rather than silently substituting another object.
+- **IA-006-L — Keep shared state reproducible — SHOULD.** Shared analytical views should preserve the meaningful scope while rechecking permissions and excluding private or device-specific state.
+- **IA-006-M — Isolate concurrent contexts — MUST.** Multiple tabs, windows, or workspaces must not overwrite each other's active scope unexpectedly.
+- **IA-006-N — Restore focus and orientation — MUST.** Returning from a detail or dialog restores focus to a meaningful trigger or result and keeps keyboard and assistive-technology users oriented.
+- **IA-006-O — Adapt context on small screens — MUST.** Collapsing controls into drawers must not hide the existence of active filters or changed scope.
+- **IA-006-P — Communicate expiry — SHOULD.** When sessions, drafts, or cached views expire, state the consequence and available recovery before destructive expiry where possible.
+
+### Persistence guidance
+
+| State | Typical persistence | Notes |
+|---|---|---|
+| Workspace/environment | Session or explicit user choice | Always visible; high-risk changes need feedback |
+| Date range and filters | URL or session | Prefer URL for shareable analysis when safe |
+| Sort and view mode | URL, session, or preference | Match task frequency and collaboration needs |
+| Pagination/scroll | Navigation history/session | Restore on return; rarely a durable preference |
+| Form draft | Draft/session | Protect privacy and provide expiry behavior |
+| Tooltip/hover | None | Transient state should not persist |
+| Secrets/credentials | None | Never expose in URL or durable UI state |
+
+### Context-change policy
+
+A parent-scope change must identify dependent state, keep compatible state, reset incompatible state, explain significant resets, and prevent actions until the new scope is clear. A global date range must not silently become a local date range with a different meaning.
+
+### Validation
+
+Run detail-and-return, browser back/forward, refresh, direct-link, workspace-switch, stale-state, multi-tab, interrupted-form, permission-change, responsive, keyboard, and screen-reader tests. Verify both state values and their visible representation.
+
+### Exceptions
+
+State MAY reset for security, expired permissions, incompatible datasets, deliberate fresh-start flows, or regulated session limits. The reset must be safe, communicated, and must not substitute another sensitive scope without confirmation.
+
+### Failure examples
+
+- Filters and page number disappear after viewing a record.
+- A workspace switch retains incompatible team filters without notice.
+- A “Reset filters” action also changes the date range and timezone.
+- A shared URL contains private identifiers or tokens.
+- Two tabs overwrite each other's active project.
+- Restored filters are applied but hidden inside a closed drawer.
+- An expired object is silently replaced with the first available object.
+- Form validation clears valid fields.
+
+### Acceptance
+
+Fail when silent context loss causes repeated work, analytical meaning changes without disclosure, users can act in the wrong scope, sensitive state is persisted unsafely, or unsaved meaningful work is discarded without protection. Otherwise, all MUST requirements and documented exceptions determine conformance.
+
 ## Planned rules
 
-- IA-006 — Preserve context across navigation.
 - IA-007 — Apply progressive disclosure without hiding critical information.
 - IA-008 — Design scalable taxonomies.
