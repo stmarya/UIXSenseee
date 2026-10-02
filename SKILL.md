@@ -44,6 +44,8 @@ Mark missing information as an assumption. Do not silently invent business requi
 - Component Behavior review: `checklists/component-behavior-review.md`
 - Accessibility conformance, semantics, keyboard, focus, contrast, reflow, media, status, and complex data: `references/06-accessibility.md`
 - Accessibility review: `checklists/accessibility-review.md`
+- Responsive and adaptive priority, reflow, navigation, forms, collections, charts, modality, localization, and state: `references/07-responsive-adaptive-design.md`
+- Responsive review: `checklists/responsive-adaptive-review.md`
 - Visual Foundation review: `checklists/visual-foundation-review.md`
 - Information Architecture audit: `checklists/information-architecture-review.md`
 - General design review: `checklists/design-review.md`

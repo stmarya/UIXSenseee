@@ -4,6 +4,8 @@
 
 ### Added
 
+- Complete Responsive & Adaptive Design draft RS-001 through RS-010 and review checklist.
+
 - Accessibility internal audit, workflow validation, fixtures, and WCAG 2.2 routing map.
 
 - Complete Accessibility draft AX-001 through AX-010 with WCAG 2.2 AA baseline and rule-mapped checklist.
@@ -46,6 +48,9 @@
 - Visual Foundation regression fixtures.
 
 ### Changed
+
+- Updated weighted project progress from 41% to 43% and document coverage from 55% to 64%.
+
 
 - Promoted Accessibility from Draft to Candidate.
 - Updated weighted project progress from 36% to 41%.
