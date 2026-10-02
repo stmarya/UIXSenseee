@@ -2,9 +2,9 @@
 
 - **Last updated:** 2026-10-01
 - **Current phase:** Phase 2 — Interaction Architecture
-- **Current focus:** Create Component Behavior structure and CB-001
+- **Current focus:** Run Component Behavior internal audit and workflow validation
 - **Next standard:** Interaction Standards
-- **Overall progress toward Stable:** 27%
+- **Overall progress toward Stable:** 30%
 
 This file is the canonical handoff and progress record for contributors and AI agents. Read it before starting work and update it in the same commit as any status-changing work.
 
@@ -12,10 +12,10 @@ This file is the canonical handoff and progress record for contributors and AI a
 
 | Metric | Current | Calculation |
 |---|---:|---|
-| Standard areas with a document | 4 of 11 | 36% |
+| Standard areas with a document | 5 of 11 | 45% |
 | Standard areas at Candidate | 4 of 11 | 36% |
 | Standard areas at Stable | 0 of 11 | 0% |
-| Weighted progress toward Stable | 300 of 1,100 points | 27% rounded |
+| Weighted progress toward Stable | 325 of 1,100 points | 30% rounded |
 
 ## Lifecycle and weights
 
@@ -35,9 +35,10 @@ Foundation Principles:      Candidate = 75
 Information Architecture:  Candidate = 75
 Visual Foundation:          Candidate = 75
 Interaction Standards:     Candidate = 75
-Seven remaining areas:      Not started = 0
+Component Behavior:        Draft = 25
+Six remaining areas:        Not started = 0
 
-Total: 300 / (11 × 100) = 27.3% → 27%
+Total: 325 / (11 × 100) = 29.5% → 30%
 ```
 
 ## Phase roadmap
@@ -48,7 +49,7 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 |---:|---|---|---|
 | 0 | Repository Foundation | Completed | Infrastructure and handoff available |
 | 1 | Core Foundations | Completed | FP, IA, and VF Candidate |
-| 2 | Interaction Architecture | In progress | Interaction Standards Candidate; starting Component Behavior |
+| 2 | Interaction Architecture | In progress | IN Candidate; CB Draft complete |
 | 3 | Inclusive & Adaptive Systems | Planned | AX and RS not started |
 | 4 | Data & Communication | Planned | DV and CT not started |
 | 5 | Trust & Release Governance | Planned | EP and QA not started |
@@ -62,7 +63,7 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 | 2 | Information Architecture | `references/01-information-architecture.md` | Candidate | Passed | Passed | Pending | Rendered dashboard, keyboard/screen-reader, tree testing, localization |
 | 3 | Visual Foundation | `references/02-visual-foundation.md` | Candidate | Passed | Passed | Pending | Rendered hierarchy, contrast, focus, reflow, icon, and theme tests |
 | 4 | Interaction Standards | `references/03-interaction-standards.md` | Candidate | Passed | Passed | Pending | Revisit Stable evidence in Phase 6 |
-| 5 | Component Behavior | `references/04-component-behavior.md` | Not started | — | — | — | Start after Interaction Standards draft |
+| 5 | Component Behavior | `references/04-component-behavior.md` | Draft | Pending | Pending | Pending | Run internal audit and workflow validation |
 | 6 | Dashboard & Data Visualization | `references/05-dashboard-data-visualization.md` | Not started | — | — | — | Define KPI, chart, axis, filter, uncertainty, and data-honesty rules |
 | 7 | Accessibility | `references/06-accessibility.md` | Not started | — | — | — | Establish WCAG 2.2 AA baseline and cross-standard authority |
 | 8 | Responsive & Adaptive Design | `references/07-responsive-adaptive-design.md` | Not started | — | — | — | Define reflow, priority, input modality, tables, charts, and density |

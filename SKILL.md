@@ -40,6 +40,8 @@ Mark missing information as an assumption. Do not silently invent business requi
 - Visual hierarchy, layout, spacing, typography, color, surfaces, and iconography: `references/02-visual-foundation.md`
 - Interaction discoverability, feedback, states, loading, motion, errors, recovery, and input modalities: `references/03-interaction-standards.md`
 - Interaction Standards review: `checklists/interaction-standards-review.md`
+- Component-specific behavior for controls, forms, overlays, feedback, collections, and menus: `references/04-component-behavior.md`
+- Component Behavior review: `checklists/component-behavior-review.md`
 - Visual Foundation review: `checklists/visual-foundation-review.md`
 - Information Architecture audit: `checklists/information-architecture-review.md`
 - General design review: `checklists/design-review.md`

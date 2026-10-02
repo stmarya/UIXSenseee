@@ -4,6 +4,8 @@
 
 ### Added
 
+- Complete Component Behavior draft CB-001 through CB-010 and a rule-mapped review checklist.
+
 - Interaction Standards internal audit, controlled workflow validation, and regression fixtures.
 - Interaction cross-standard ownership boundaries.
 
@@ -38,6 +40,9 @@
 - Visual Foundation regression fixtures.
 
 ### Changed
+
+- Updated weighted project progress from 27% to 30% and document coverage from 36% to 45%.
+
 
 - Promoted Interaction Standards from Draft to Candidate.
 - Updated weighted project progress from 23% to 27%.
