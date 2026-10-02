@@ -4,6 +4,8 @@
 
 ### Added
 
+- Responsive internal audit, workflow validation, and regression fixtures.
+
 - Complete Responsive & Adaptive Design draft RS-001 through RS-010 and review checklist.
 
 - Accessibility internal audit, workflow validation, fixtures, and WCAG 2.2 routing map.
@@ -48,6 +50,11 @@
 - Visual Foundation regression fixtures.
 
 ### Changed
+
+- Promoted Responsive & Adaptive Design from Draft to Candidate.
+- Completed Phase 3 and started Phase 4 Data & Communication.
+- Updated weighted project progress from 43% to 48%.
+
 
 - Updated weighted project progress from 41% to 43% and document coverage from 55% to 64%.
 

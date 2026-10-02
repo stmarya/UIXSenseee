@@ -1,8 +1,8 @@
 # Responsive & Adaptive Design
 
 - **Document ID:** UIXS-RS
-- **Version:** 0.10.0
-- **Status:** Draft
+- **Version:** 0.11.0
+- **Status:** Candidate
 - **Owner:** UIXSenseee maintainers
 - **Last updated:** 2026-10-01
 - **Related standards:** FP, IA, VF, IN, CB, AX, DV, CT, QA
@@ -456,3 +456,8 @@ Conformance requires RS-001 through RS-010 plus applicable Accessibility require
 - [W3C WCAG 2.2: Resize Text](https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html)
 - [W3C WCAG 2.2: Text Spacing](https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html)
 - [W3C WCAG 2.2](https://www.w3.org/TR/WCAG22/)
+
+
+## Validation status
+
+Internal audit and controlled workflow validation passed on 2026-10-01. Responsive & Adaptive Design is Candidate with 10 main rules and 80 unique sub-rules. Rendered multi-viewport, zoom, modality, localization, and performance evidence remains required before Stable status.
