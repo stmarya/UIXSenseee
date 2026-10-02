@@ -1,8 +1,8 @@
 # UIXSenseee Delivery Phases
 
 - **Last updated:** 2026-10-01
-- **Current phase:** Phase 1 — Core Foundations
-- **Overall progress toward Stable:** 18%
+- **Current phase:** Phase 2 — Interaction Architecture
+- **Overall progress toward Stable:** 20%
 - **Canonical progress record:** `STATUS.md`
 
 This document divides all remaining work into ordered delivery phases. A phase may begin in preparation before the previous phase is fully Stable, but it may not be marked complete until its exit criteria are satisfied.
@@ -19,8 +19,8 @@ This document divides all remaining work into ordered delivery phases. A phase m
 | Phase | Name | Standard areas | Status | Current result |
 |---:|---|---|---|---|
 | 0 | Repository Foundation | Skill, governance, templates, status tracking | Completed | Baseline infrastructure available |
-| 1 | Core Foundations | FP, IA, VF | In progress | IA and VF Candidate; FP Audited Draft |
-| 2 | Interaction Architecture | IN, CB | Planned | Not started |
+| 1 | Core Foundations | FP, IA, VF | Completed | FP, IA, and VF Candidate |
+| 2 | Interaction Architecture | IN, CB | In progress | Starting Interaction Standards |
 | 3 | Inclusive & Adaptive Systems | AX, RS | Planned | Not started |
 | 4 | Data & Communication | DV, CT | Planned | Not started |
 | 5 | Trust & Release Governance | EP, QA | Planned | Not started |
@@ -55,8 +55,8 @@ This document divides all remaining work into ordered delivery phases. A phase m
 
 ## Phase 1 — Core Foundations
 
-**Status:** In progress  
-**Current marker:** IA and VF Candidate; Foundation Principles Audited Draft
+**Status:** Completed  
+**Current marker:** FP, IA, and VF Candidate
 
 ### Scope
 
@@ -79,14 +79,14 @@ This document divides all remaining work into ordered delivery phases. A phase m
 ### Remaining
 
 - [x] Foundation Principles internal audit
-- [ ] Foundation Principles workflow validation
-- [ ] Foundation Principles Candidate promotion
+- [x] Foundation Principles workflow validation
+- [x] Foundation Principles Candidate promotion
 - [ ] Rendered and representative-user evidence for IA Stable status
 - [ ] Rendered, contrast, focus, reflow, icon, and theme evidence for VF Stable status
 
 ### Immediate next action
 
-Run controlled Foundation Principles workflow validation using scenarios for user needs, accessibility precedence, user control, data honesty, and dark patterns.
+Phase 1 Candidate exit criteria are complete. Stable evidence remains scheduled for Phase 6.
 
 ### Exit criteria
 
@@ -99,7 +99,8 @@ Run controlled Foundation Principles workflow validation using scenarios for use
 
 ## Phase 2 — Interaction Architecture
 
-**Status:** Planned
+**Status:** In progress
+**Immediate next action:** Create Interaction Standards structure and IN-001.
 
 ### Scope
 

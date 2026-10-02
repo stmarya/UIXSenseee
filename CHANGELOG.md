@@ -4,6 +4,8 @@
 
 ### Added
 
+- Controlled Foundation Principles workflow validation and regression fixtures.
+
 - Expanded Foundation Principles with scope, terminology, verification, failure examples, rule boundaries, conformance, and evidence basis.
 - Foundation Principles internal audit report and dedicated review checklist.
 
@@ -27,6 +29,11 @@
 - Visual Foundation regression fixtures.
 
 ### Changed
+
+- Promoted Foundation Principles from Audited Draft to Candidate.
+- Completed Phase 1 Core Foundations and started Phase 2 Interaction Architecture.
+- Updated weighted project progress from 18% to 20%.
+
 
 - Promoted Foundation Principles from Draft to Audited Draft after internal audit.
 - Updated project progress from 16% to 18%.

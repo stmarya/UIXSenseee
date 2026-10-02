@@ -1,8 +1,8 @@
 # Foundation Principles
 
 - **Document ID:** UIXS-FP
-- **Version:** 0.2.0
-- **Status:** Audited Draft
+- **Version:** 0.3.0
+- **Status:** Candidate
 - **Owner:** UIXSenseee maintainers
 - **Last updated:** 2026-10-01
 - **Review cadence:** On normative change and before each stable release
@@ -444,4 +444,6 @@ SHOULD findings may produce Conditional Pass when task safety and correctness re
 
 ## Audit status
 
-Internal structural audit passed for Audited Draft status on 2026-10-01. Controlled workflow validation remains required before Candidate status. See `audits/2026-10-01-foundation-principles.md`.
+Internal structural audit and controlled workflow validation passed on 2026-10-01. Candidate status means the principles are ready to govern later standards, but rendered, accessibility, localization, and representative-user evidence remain required before Stable status.
+
+See `audits/2026-10-01-foundation-principles.md` and `validation/2026-10-01-foundation-principles-workflow.md`.

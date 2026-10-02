@@ -11,6 +11,9 @@
 - [ ] Relevant principles are selected and exclusions are explained.
 - [ ] One primary topic rule owns each finding; related FP rules are linked without duplication.
 - [ ] Evidence and assumptions are identified.
+- [ ] Precedence is applied before engagement, efficiency, or aesthetic preference.
+- [ ] Automatic-Fail conditions are explicitly evaluated.
+- [ ] Each finding includes a primary principle, related topic rules, correction, and verification method.
 
 ## Principles
 

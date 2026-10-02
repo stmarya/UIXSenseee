@@ -1,10 +1,10 @@
 # UIXSenseee Project Status
 
 - **Last updated:** 2026-10-01
-- **Current phase:** Phase 1 — Core Foundations
-- **Current focus:** Foundation Principles workflow validation
+- **Current phase:** Phase 2 — Interaction Architecture
+- **Current focus:** Create Interaction Standards structure and IN-001
 - **Next standard:** Interaction Standards
-- **Overall progress toward Stable:** 18%
+- **Overall progress toward Stable:** 20%
 
 This file is the canonical handoff and progress record for contributors and AI agents. Read it before starting work and update it in the same commit as any status-changing work.
 
@@ -15,7 +15,7 @@ This file is the canonical handoff and progress record for contributors and AI a
 | Standard areas with a document | 3 of 11 | 27% |
 | Standard areas at Candidate | 2 of 11 | 18% |
 | Standard areas at Stable | 0 of 11 | 0% |
-| Weighted progress toward Stable | 200 of 1,100 points | 18% rounded |
+| Weighted progress toward Stable | 225 of 1,100 points | 20% rounded |
 
 ## Lifecycle and weights
 
@@ -31,12 +31,12 @@ This file is the canonical handoff and progress record for contributors and AI a
 ### Current weighted calculation
 
 ```text
-Foundation Principles:      Audited Draft = 50
+Foundation Principles:      Candidate = 75
 Information Architecture:  Candidate = 75
 Visual Foundation:          Candidate = 75
 Eight remaining areas:      Not started = 0
 
-Total: 200 / (11 × 100) = 18.2% → 18%
+Total: 225 / (11 × 100) = 20.5% → 20%
 ```
 
 ## Phase roadmap
@@ -46,8 +46,8 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 | Phase | Name | Status | Progress marker |
 |---:|---|---|---|
 | 0 | Repository Foundation | Completed | Infrastructure and handoff available |
-| 1 | Core Foundations | In progress | IA and VF Candidate; FP Audited Draft |
-| 2 | Interaction Architecture | Planned | IN and CB not started |
+| 1 | Core Foundations | Completed | FP, IA, and VF Candidate |
+| 2 | Interaction Architecture | In progress | Starting Interaction Standards |
 | 3 | Inclusive & Adaptive Systems | Planned | AX and RS not started |
 | 4 | Data & Communication | Planned | DV and CT not started |
 | 5 | Trust & Release Governance | Planned | EP and QA not started |
@@ -57,7 +57,7 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 
 | # | Standard area | Reference | Current status | Internal audit | Workflow validation | Stable validation | Next action |
 |---:|---|---|---|---|---|---|---|
-| 1 | Foundation Principles | `references/00-foundation-principles.md` | Audited Draft | Passed | Pending | Pending | Run controlled workflow validation, then promote to Candidate if passed |
+| 1 | Foundation Principles | `references/00-foundation-principles.md` | Candidate | Passed | Passed | Pending | Revisit integrated Stable evidence in Phase 6 |
 | 2 | Information Architecture | `references/01-information-architecture.md` | Candidate | Passed | Passed | Pending | Rendered dashboard, keyboard/screen-reader, tree testing, localization |
 | 3 | Visual Foundation | `references/02-visual-foundation.md` | Candidate | Passed | Passed | Pending | Rendered hierarchy, contrast, focus, reflow, icon, and theme tests |
 | 4 | Interaction Standards | `references/03-interaction-standards.md` | Not started | — | — | — | Create structure and IN-001 after Foundation Principles reaches Candidate |
@@ -103,33 +103,19 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 
 ## Immediate work queue
 
-### Priority 1 — Foundation Principles workflow validation
+### Priority 1 — Interaction Standards foundation
 
-1. Create controlled scenarios covering user needs, accessibility precedence, user control, data honesty, and dark patterns.
-2. Verify routing, severity, duplicate suppression, correction, and conformance decision.
-3. Store results and fixtures in `validation/`.
-4. Promote Foundation Principles to Candidate only if validation passes.
+1. Create `references/03-interaction-standards.md`.
+2. Define purpose, scope, terminology, ownership boundaries, and planned IN rules.
+3. Draft IN-001 — Make interactions discoverable and predictable.
+4. Create or extend the rule-mapped Interaction checklist.
+5. Update `STATUS.md`, `PHASES.md`, and `CHANGELOG.md` in the same commit.
 
-### Priority 2 — Phase 1 Stable evidence planning
+### Priority 2 — Remaining Phase 2 standards
 
-1. Define rendered and representative-user evidence still required for IA and VF.
-2. Keep this work planned for Phase 6 unless it blocks later standards.
-3. Preserve Candidate status until Stable evidence is complete.
-
-### Priority 3 — Interaction Standards
-
-Create `references/03-interaction-standards.md`, beginning with:
-
-- IN-001 — Make interactions discoverable and predictable
-- Affordance
-- Feedback and system status
-- Interaction states
-- Loading behavior
-- Motion
-- Error prevention
-- Undo and recovery
-- Destructive actions
-- Keyboard interaction
+1. Complete Interaction Standards through internal audit and workflow validation.
+2. Create Component Behavior after the Interaction draft is structurally established.
+3. Promote IN and CB to Candidate before Phase 3.
 
 ## Stable-status work still required
 
