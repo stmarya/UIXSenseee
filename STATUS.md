@@ -2,9 +2,9 @@
 
 - **Last updated:** 2026-10-01
 - **Current phase:** Phase 4 — Data & Communication
-- **Current focus:** Run Dashboard & Data Visualization internal audit and workflow validation
+- **Current focus:** Create Content Design & Microcopy standard
 - **Next standard:** Interaction Standards
-- **Overall progress toward Stable:** 50%
+- **Overall progress toward Stable:** 55%
 
 This file is the canonical handoff and progress record for contributors and AI agents. Read it before starting work and update it in the same commit as any status-changing work.
 
@@ -13,9 +13,9 @@ This file is the canonical handoff and progress record for contributors and AI a
 | Metric | Current | Calculation |
 |---|---:|---|
 | Standard areas with a document | 8 of 11 | 73% |
-| Standard areas at Candidate | 7 of 11 | 64% |
+| Standard areas at Candidate | 8 of 11 | 73% |
 | Standard areas at Stable | 0 of 11 | 0% |
-| Weighted progress toward Stable | 550 of 1,100 points | 50% rounded |
+| Weighted progress toward Stable | 600 of 1,100 points | 55% rounded |
 
 ## Lifecycle and weights
 
@@ -38,10 +38,10 @@ Interaction Standards:     Candidate = 75
 Component Behavior:        Candidate = 75
 Accessibility:             Candidate = 75
 Responsive & Adaptive:     Candidate = 75
-Dashboard & Data Viz:      Draft = 25
+Dashboard & Data Viz:      Candidate = 75
 Three remaining areas:      Not started = 0
 
-Total: 550 / (11 × 100) = 50.0% → 50%
+Total: 600 / (11 × 100) = 54.5% → 55%
 ```
 
 ## Phase roadmap
@@ -54,7 +54,7 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 | 1 | Core Foundations | Completed | FP, IA, and VF Candidate |
 | 2 | Interaction Architecture | Completed | IN and CB Candidate |
 | 3 | Inclusive & Adaptive Systems | Completed | AX and RS Candidate |
-| 4 | Data & Communication | In progress | DV Draft complete |
+| 4 | Data & Communication | In progress | DV Candidate; starting Content Design |
 | 5 | Trust & Release Governance | Planned | EP and QA not started |
 | 6 | Integration & Stable Release | Planned | Starts after all standards reach Candidate |
 
@@ -67,7 +67,7 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 | 3 | Visual Foundation | `references/02-visual-foundation.md` | Candidate | Passed | Passed | Pending | Rendered hierarchy, contrast, focus, reflow, icon, and theme tests |
 | 4 | Interaction Standards | `references/03-interaction-standards.md` | Candidate | Passed | Passed | Pending | Revisit Stable evidence in Phase 6 |
 | 5 | Component Behavior | `references/04-component-behavior.md` | Candidate | Passed | Passed | Pending | Revisit Stable evidence in Phase 6 |
-| 6 | Dashboard & Data Visualization | `references/05-dashboard-data-visualization.md` | Draft | Pending | Pending | Pending | Run internal audit and workflow validation |
+| 6 | Dashboard & Data Visualization | `references/05-dashboard-data-visualization.md` | Candidate | Passed | Passed | Pending | Revisit rendered Stable evidence in Phase 6 |
 | 7 | Accessibility | `references/06-accessibility.md` | Candidate | Passed | Passed | Pending | Complete criterion-level Stable evidence in Phase 6 |
 | 8 | Responsive & Adaptive Design | `references/07-responsive-adaptive-design.md` | Candidate | Passed | Passed | Pending | Revisit rendered Stable evidence in Phase 6 |
 | 9 | Content Design & Microcopy | `references/08-content-design-microcopy.md` | Not started | — | — | — | Define language, labels, errors, empty states, formats, and localization |

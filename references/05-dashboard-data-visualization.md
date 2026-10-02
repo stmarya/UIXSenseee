@@ -1,8 +1,8 @@
 # Dashboard & Data Visualization
 
 - **Document ID:** UIXS-DV
-- **Version:** 0.10.0
-- **Status:** Draft
+- **Version:** 0.11.0
+- **Status:** Candidate
 - **Owner:** UIXSenseee maintainers
 - **Last updated:** 2026-10-01
 - **Related standards:** FP, IA, VF, IN, CB, AX, RS, CT, EP, QA
@@ -458,3 +458,8 @@ Conformance requires DV-001 through DV-010, source-backed numeric verification, 
 - [Tableau: How to Spot Misleading Charts](https://www.tableau.com/blog/spot-misleading-charts-checklist)
 - [W3C WCAG 2.2](https://www.w3.org/TR/WCAG22/)
 - [Nielsen Norman Group: 10 Usability Heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/)
+
+
+## Validation status
+
+Internal audit and controlled workflow validation passed on 2026-10-01. DV is Candidate with 10 main rules and 80 unique sub-rules. Stable status requires source-backed rendered dashboards, accessibility, and representative decision testing.

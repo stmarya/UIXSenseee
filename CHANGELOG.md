@@ -4,6 +4,8 @@
 
 ### Added
 
+- Dashboard & Data Visualization internal audit, workflow validation, and fixtures.
+
 - Complete Dashboard & Data Visualization draft DV-001 through DV-010 and review checklist.
 
 - Responsive internal audit, workflow validation, and regression fixtures.
@@ -52,6 +54,10 @@
 - Visual Foundation regression fixtures.
 
 ### Changed
+
+- Promoted Dashboard & Data Visualization from Draft to Candidate.
+- Updated weighted project progress from 50% to 55%.
+
 
 - Updated weighted project progress from 48% to 50% and document coverage from 64% to 73%.
 
