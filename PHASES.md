@@ -2,7 +2,7 @@
 
 - **Last updated:** 2026-10-01
 - **Current phase:** Phase 1 — Core Foundations
-- **Overall progress toward Stable:** 16%
+- **Overall progress toward Stable:** 18%
 - **Canonical progress record:** `STATUS.md`
 
 This document divides all remaining work into ordered delivery phases. A phase may begin in preparation before the previous phase is fully Stable, but it may not be marked complete until its exit criteria are satisfied.
@@ -19,7 +19,7 @@ This document divides all remaining work into ordered delivery phases. A phase m
 | Phase | Name | Standard areas | Status | Current result |
 |---:|---|---|---|---|
 | 0 | Repository Foundation | Skill, governance, templates, status tracking | Completed | Baseline infrastructure available |
-| 1 | Core Foundations | FP, IA, VF | In progress | IA and VF Candidate; FP Draft |
+| 1 | Core Foundations | FP, IA, VF | In progress | IA and VF Candidate; FP Audited Draft |
 | 2 | Interaction Architecture | IN, CB | Planned | Not started |
 | 3 | Inclusive & Adaptive Systems | AX, RS | Planned | Not started |
 | 4 | Data & Communication | DV, CT | Planned | Not started |
@@ -56,7 +56,7 @@ This document divides all remaining work into ordered delivery phases. A phase m
 ## Phase 1 — Core Foundations
 
 **Status:** In progress  
-**Current marker:** IA and VF Candidate; Foundation Principles Draft
+**Current marker:** IA and VF Candidate; Foundation Principles Audited Draft
 
 ### Scope
 
@@ -78,7 +78,7 @@ This document divides all remaining work into ordered delivery phases. A phase m
 
 ### Remaining
 
-- [ ] Foundation Principles internal audit
+- [x] Foundation Principles internal audit
 - [ ] Foundation Principles workflow validation
 - [ ] Foundation Principles Candidate promotion
 - [ ] Rendered and representative-user evidence for IA Stable status
@@ -86,7 +86,7 @@ This document divides all remaining work into ordered delivery phases. A phase m
 
 ### Immediate next action
 
-Audit `references/00-foundation-principles.md`, create a dedicated checklist and audit report, update `STATUS.md`, then run controlled workflow validation.
+Run controlled Foundation Principles workflow validation using scenarios for user needs, accessibility precedence, user control, data honesty, and dark patterns.
 
 ### Exit criteria
 

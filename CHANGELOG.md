@@ -4,6 +4,9 @@
 
 ### Added
 
+- Expanded Foundation Principles with scope, terminology, verification, failure examples, rule boundaries, conformance, and evidence basis.
+- Foundation Principles internal audit report and dedicated review checklist.
+
 - Root `STATUS.md` as the canonical project roadmap, progress calculation, work queue, and contributor handoff record.
 - Root `PHASES.md` dividing remaining work into seven delivery phases with scope, deliverables, dependencies, and exit criteria.
 - Mandatory same-commit progress update policy for standards, checklists, audits, validations, and fixtures.
@@ -24,6 +27,10 @@
 - Visual Foundation regression fixtures.
 
 ### Changed
+
+- Promoted Foundation Principles from Draft to Audited Draft after internal audit.
+- Updated project progress from 16% to 18%.
+
 
 - Promoted Visual Foundation from Draft to Candidate after workflow validation.
 - Expanded the Visual Foundation checklist output contract for cross-standard findings.

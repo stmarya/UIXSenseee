@@ -29,6 +29,8 @@ See [`STATUS.md`](STATUS.md) for canonical progress and [`PHASES.md`](PHASES.md)
 
 ## Current status
 
+Foundation Principles is now Audited Draft; Information Architecture and Visual Foundation are Candidate. Canonical details remain in `STATUS.md`.
+
 Version `0.1.0-draft`. Foundation Principles and the audited Information Architecture draft (IA-001 through IA-008) are available. The Information Architecture standard is Candidate after internal audit and controlled workflow validation. The Visual Foundation standard (VF-001 through VF-008) is Candidate after internal audit and controlled workflow validation. Rendered-interface, accessibility, localization, and representative-user validation remain required before Stable status.
 
 ## Planned standards
