@@ -21,7 +21,7 @@ UIXSenseee is a technology-agnostic UI/UX standard and review skill for humans a
 
 ## Current status
 
-Version `0.1.0-draft`. Foundation Principles, IA-001, and IA-002 are drafted. Other standard areas will be added after review.
+Version `0.1.0-draft`. Foundation Principles and the complete Information Architecture draft (IA-001 through IA-008) are available. Other standard areas will be added after review.
 
 ## Planned standards
 

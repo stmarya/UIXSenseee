@@ -1,7 +1,7 @@
 # Information Architecture
 
 - **Document ID:** UIXS-IA
-- **Version:** 0.5.0
+- **Version:** 0.6.0
 - **Status:** Draft
 - **Related standards:** FP, CT, AX, RS, QA
 
@@ -510,6 +510,107 @@ Security, privacy, age-appropriate design, and expert workflows MAY limit initia
 
 Fail when critical information, required actions, active analytical context, or safe refusal is hidden; essential content depends on hover; partial data appears complete; or disclosure is inaccessible. Conditional Pass may cover discoverability or state-persistence improvements that do not block safe task completion. Otherwise, all MUST requirements and documented exceptions determine conformance.
 
-## Planned rules
+---
 
-- IA-008 — Design scalable taxonomies.
+## IA-008 — Design scalable taxonomies
+
+**Level:** MUST  
+**Status:** Draft  
+**Related:** FP-002, FP-008, FP-014, IA-P01, IA-P03, IA-P05, IA-P08
+
+### Rule
+
+Taxonomies MUST use clear, governed, and extensible classification rules so content remains findable and meaning remains stable as records, teams, roles, languages, and use cases grow.
+
+### Rationale
+
+A taxonomy is more than a list of categories. It defines how information is named, grouped, related, filtered, and retrieved. Uncontrolled growth creates duplicate categories, ambiguous labels, overloaded “Other” buckets, broken historical reporting, and navigation that reflects internal ownership rather than user understanding.
+
+### Taxonomy model
+
+Document the following for each taxonomy:
+
+- purpose and user tasks;
+- classified object type;
+- category definitions and inclusion criteria;
+- hierarchy or facet structure;
+- preferred terms, synonyms, and deprecated terms;
+- canonical identifiers independent of display labels;
+- ownership and change approval;
+- migration and historical-data behavior;
+- localization and permission behavior.
+
+### Requirements
+
+- **IA-008-A — Define purpose and scope — MUST.** State what the taxonomy classifies, for whom, and which decisions, navigation, search, filters, or reporting it supports.
+- **IA-008-B — Define category boundaries — MUST.** Categories at the same level require distinct definitions, inclusion criteria, and representative examples.
+- **IA-008-C — Use controlled vocabulary — MUST.** Record preferred terms, allowed synonyms, discouraged terms, abbreviations, and definitions for important concepts.
+- **IA-008-D — Use stable canonical identifiers — MUST.** Display-label changes must not silently create a new category, break saved views, or corrupt historical analysis.
+- **IA-008-E — Choose hierarchy or facets deliberately — MUST.** Use hierarchy for meaningful parent–child relationships and facets for independent dimensions such as region, status, team, period, or type.
+- **IA-008-F — Avoid duplicate and near-duplicate categories — MUST.** Detect spelling, capitalization, singular/plural, acronym, and synonym variants before creating a category.
+- **IA-008-G — Govern multi-classification — MUST.** If an item may belong to several categories, define whether classification is single-select, multi-select, primary plus secondary, or context-dependent.
+- **IA-008-H — Limit “Other” and “Miscellaneous” — SHOULD.** Use them only with a defined review policy, visibility into included items, and a threshold for creating a new meaningful category.
+- **IA-008-I — Do not expose speculative empty categories — SHOULD NOT.** Add categories for demonstrated content and user needs, not hypothetical future expansion.
+- **IA-008-J — Support growth without arbitrary depth — SHOULD.** Test increased volume before adding hierarchy levels. Do not use fixed item-count or click-count rules without evidence.
+- **IA-008-K — Preserve historical meaning — MUST.** Merges, splits, renames, and deprecations must define how existing records, saved filters, reports, URLs, and comparisons behave.
+- **IA-008-L — Govern category lifecycle — MUST.** Define proposal, review, approval, rename, merge, split, deprecation, archive, and deletion procedures.
+- **IA-008-M — Support search and filtering — SHOULD.** Index preferred terms, approved synonyms, common abbreviations, and legacy labels without presenting duplicates as separate concepts.
+- **IA-008-N — Support localization — MUST.** Translate display labels without changing canonical identity; document culture-specific categories and avoid assuming one language's alphabetical order or word boundaries.
+- **IA-008-O — Handle permission differences — MUST.** Hidden categories must not create misleading counts, broken parents, or unexplained gaps. Do not reveal restricted labels through search, breadcrumbs, or filter metadata.
+- **IA-008-P — Make generated categories explainable — MUST.** AI-generated or algorithmic clusters must be labeled as generated, expose their basis when material, and allow review or correction for consequential use.
+- **IA-008-Q — Assign ownership — MUST.** Every production taxonomy requires an accountable owner and a review cadence proportional to change rate and risk.
+- **IA-008-R — Measure taxonomy health — SHOULD.** Monitor uncategorized rate, “Other” concentration, duplicate proposals, zero-result searches, reassignment frequency, and category growth.
+
+### Hierarchy versus facets
+
+Use a hierarchy when “is a type of” or “is contained by” is consistently true. Use facets when dimensions can vary independently. Do not force region, status, team, and period into one deep tree when users need to combine them as filters.
+
+### Change policy
+
+- **Rename:** keep canonical ID; update preferred term and synonyms.
+- **Merge:** choose a surviving ID or documented replacement; migrate records and saved state.
+- **Split:** define reassignment rules and handling for unresolved historical records.
+- **Deprecate:** prevent new assignment while preserving historical interpretation.
+- **Delete:** allowed only when no required records, links, reports, audit obligations, or legal retention remain.
+
+### Validation
+
+Use open and closed card sorting, tree testing, facet-combination testing, terminology review, duplicate detection, historical migration simulation, localization stress tests, permission tests, and scale tests with realistic projected volume. Validate categories using representative records, not labels alone.
+
+### Exceptions
+
+Regulated, scientific, legal, or industry-standard classifications MAY preserve expert structures and terminology. Product-facing aliases or guided entry points may improve findability without changing the canonical model. Temporary migration categories require an owner and expiry date.
+
+### Failure examples
+
+- Separate categories for “Customer Support,” “Support,” and “CS.”
+- A deep tree combining region, team, status, and period.
+- “Other” becoming the largest category without review.
+- Renaming a label creates a new ID and breaks trend history.
+- Restricted categories appear in filter counts to unauthorized users.
+- Empty categories added for imagined future features.
+- AI-generated clusters presented as authoritative business categories without review.
+- No owner can approve a merge or resolve conflicting definitions.
+
+### Acceptance
+
+Fail when category boundaries are undefined, duplicates change meaning, taxonomy changes break historical interpretation, restricted labels leak, canonical identity depends only on display text, or no accountable owner exists. Conditional Pass may cover measurable non-blocking cleanup with an owner and deadline. Otherwise, all MUST requirements and documented exceptions determine conformance.
+
+---
+
+## Information Architecture conformance
+
+A design conforms to this document only when every relevant MUST and MUST NOT requirement from IA-001 through IA-008 is satisfied or has an approved exception. SHOULD findings may produce Conditional Pass when they do not block safe task completion and have an owner, rationale, and review date.
+
+### Required evidence
+
+- user and task inventory;
+- hierarchy or sitemap;
+- terminology inventory or glossary;
+- navigation and wayfinding model;
+- search, filter, sort, and command definitions;
+- context-persistence matrix;
+- progressive-disclosure inventory for critical content;
+- taxonomy definitions and ownership;
+- completed design-review checklist;
+- documented exceptions.

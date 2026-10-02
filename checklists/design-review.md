@@ -28,6 +28,14 @@
 - [ ] Empty, no-results, permission, and error states are distinguished.
 - [ ] Sorting changes order only, not collection membership.
 - [ ] Categories at the same level have distinct meanings.
+- [ ] Taxonomy purpose, object type, and category boundaries are defined.
+- [ ] Preferred terms, synonyms, and deprecated terms are governed.
+- [ ] Canonical identity does not depend only on display labels.
+- [ ] Hierarchies and independent facets are not mixed arbitrarily.
+- [ ] “Other” and uncategorized records are measurable and reviewed.
+- [ ] Rename, merge, split, deprecation, and historical migration behavior are defined.
+- [ ] Restricted taxonomy labels and counts do not leak through navigation or filters.
+- [ ] A taxonomy owner and review cadence are assigned.
 - [ ] Heading hierarchy matches content hierarchy.
 - [ ] Primary state, required input, and primary action are visible.
 - [ ] Cost, risk, consent, destructive consequences, and material uncertainty are visible before commitment.

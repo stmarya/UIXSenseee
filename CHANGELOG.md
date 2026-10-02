@@ -9,6 +9,8 @@
 - IA-005: Separate navigation, search, filter, and sort.
 - IA-006: Preserve context across navigation.
 - IA-007: Apply progressive disclosure without hiding critical information.
+- IA-008: Design scalable taxonomies.
+- Information Architecture conformance and required-evidence section.
 
 ## 0.1.0-draft — 2026-10-01
 
