@@ -42,6 +42,8 @@ Mark missing information as an assumption. Do not silently invent business requi
 - Interaction Standards review: `checklists/interaction-standards-review.md`
 - Component-specific behavior for controls, forms, overlays, feedback, collections, and menus: `references/04-component-behavior.md`
 - Component Behavior review: `checklists/component-behavior-review.md`
+- Accessibility conformance, semantics, keyboard, focus, contrast, reflow, media, status, and complex data: `references/06-accessibility.md`
+- Accessibility review: `checklists/accessibility-review.md`
 - Visual Foundation review: `checklists/visual-foundation-review.md`
 - Information Architecture audit: `checklists/information-architecture-review.md`
 - General design review: `checklists/design-review.md`

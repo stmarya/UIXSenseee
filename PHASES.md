@@ -2,7 +2,7 @@
 
 - **Last updated:** 2026-10-01
 - **Current phase:** Phase 3 — Inclusive & Adaptive Systems
-- **Overall progress toward Stable:** 34%
+- **Overall progress toward Stable:** 36%
 - **Canonical progress record:** `STATUS.md`
 
 This document divides all remaining work into ordered delivery phases. A phase may begin in preparation before the previous phase is fully Stable, but it may not be marked complete until its exit criteria are satisfied.
@@ -21,7 +21,7 @@ This document divides all remaining work into ordered delivery phases. A phase m
 | 0 | Repository Foundation | Skill, governance, templates, status tracking | Completed | Baseline infrastructure available |
 | 1 | Core Foundations | FP, IA, VF | Completed | FP, IA, and VF Candidate |
 | 2 | Interaction Architecture | IN, CB | Completed | IN and CB Candidate |
-| 3 | Inclusive & Adaptive Systems | AX, RS | In progress | Starting Accessibility |
+| 3 | Inclusive & Adaptive Systems | AX, RS | In progress | Accessibility Draft complete |
 | 4 | Data & Communication | DV, CT | Planned | Not started |
 | 5 | Trust & Release Governance | EP, QA | Planned | Not started |
 | 6 | Integration & Stable Release | Cross-standard validation and release | Planned | Not started |
@@ -166,7 +166,7 @@ Phase 1 Candidate exit criteria are complete. Stable evidence remains scheduled 
 ## Phase 3 — Inclusive & Adaptive Systems
 
 **Status:** In progress
-**Immediate next action:** Create Accessibility structure and AX-001.
+**Immediate next action:** Run Accessibility internal audit and workflow validation.
 
 ### Scope
 
@@ -195,6 +195,16 @@ Phase 1 Candidate exit criteria are complete. Stable evidence remains scheduled 
 - Zoom and text resizing
 - Adaptive density
 - Long content and localization
+
+### Progress
+
+- [x] Accessibility draft AX-001 through AX-010
+- [ ] Accessibility internal audit
+- [ ] Accessibility workflow validation
+- [ ] Accessibility Candidate promotion
+- [ ] Responsive & Adaptive Design draft
+- [ ] Responsive internal audit and workflow validation
+- [ ] Responsive Candidate promotion
 
 ### Deliverables
 

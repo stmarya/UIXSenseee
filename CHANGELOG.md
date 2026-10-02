@@ -4,6 +4,8 @@
 
 ### Added
 
+- Complete Accessibility draft AX-001 through AX-010 with WCAG 2.2 AA baseline and rule-mapped checklist.
+
 - Component Behavior internal audit, workflow validation, and regression fixtures.
 
 - Complete Component Behavior draft CB-001 through CB-010 and a rule-mapped review checklist.
@@ -42,6 +44,9 @@
 - Visual Foundation regression fixtures.
 
 ### Changed
+
+- Updated weighted project progress from 34% to 36% and document coverage from 45% to 55%.
+
 
 - Promoted Component Behavior from Draft to Candidate.
 - Completed Phase 2 Interaction Architecture and started Phase 3 Inclusive & Adaptive Systems.
