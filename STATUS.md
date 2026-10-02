@@ -1,10 +1,10 @@
 # UIXSenseee Project Status
 
 - **Last updated:** 2026-10-01
-- **Current phase:** Phase 4 — Data & Communication
-- **Current focus:** Run Content Design internal audit and workflow validation
-- **Next standard:** Interaction Standards
-- **Overall progress toward Stable:** 57%
+- **Current phase:** Phase 5 — Trust & Release Governance
+- **Current focus:** Create Ethics & Privacy standard
+- **Next standard:** Ethics & Privacy
+- **Overall progress toward Stable:** 61%
 
 This file is the canonical handoff and progress record for contributors and AI agents. Read it before starting work and update it in the same commit as any status-changing work.
 
@@ -13,9 +13,9 @@ This file is the canonical handoff and progress record for contributors and AI a
 | Metric | Current | Calculation |
 |---|---:|---|
 | Standard areas with a document | 9 of 11 | 82% |
-| Standard areas at Candidate | 8 of 11 | 73% |
+| Standard areas at Candidate | 9 of 11 | 82% |
 | Standard areas at Stable | 0 of 11 | 0% |
-| Weighted progress toward Stable | 625 of 1,100 points | 57% rounded |
+| Weighted progress toward Stable | 675 of 1,100 points | 61% rounded |
 
 ## Lifecycle and weights
 
@@ -39,10 +39,10 @@ Component Behavior:        Candidate = 75
 Accessibility:             Candidate = 75
 Responsive & Adaptive:     Candidate = 75
 Dashboard & Data Viz:      Candidate = 75
-Content Design:            Draft = 25
+Content Design:            Candidate = 75
 Two remaining areas:        Not started = 0
 
-Total: 625 / (11 × 100) = 56.8% → 57%
+Total: 675 / (11 × 100) = 61.4% → 61%
 ```
 
 ## Phase roadmap
@@ -55,8 +55,8 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 | 1 | Core Foundations | Completed | FP, IA, and VF Candidate |
 | 2 | Interaction Architecture | Completed | IN and CB Candidate |
 | 3 | Inclusive & Adaptive Systems | Completed | AX and RS Candidate |
-| 4 | Data & Communication | In progress | DV Candidate; CT Draft complete |
-| 5 | Trust & Release Governance | Planned | EP and QA not started |
+| 4 | Data & Communication | Completed | DV and CT Candidate |
+| 5 | Trust & Release Governance | In progress | Starting Ethics & Privacy |
 | 6 | Integration & Stable Release | Planned | Starts after all standards reach Candidate |
 
 ## Standards roadmap
@@ -71,7 +71,7 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 | 6 | Dashboard & Data Visualization | `references/05-dashboard-data-visualization.md` | Candidate | Passed | Passed | Pending | Revisit rendered Stable evidence in Phase 6 |
 | 7 | Accessibility | `references/06-accessibility.md` | Candidate | Passed | Passed | Pending | Complete criterion-level Stable evidence in Phase 6 |
 | 8 | Responsive & Adaptive Design | `references/07-responsive-adaptive-design.md` | Candidate | Passed | Passed | Pending | Revisit rendered Stable evidence in Phase 6 |
-| 9 | Content Design & Microcopy | `references/08-content-design-microcopy.md` | Draft | Pending | Pending | Pending | Run internal audit and workflow validation |
+| 9 | Content Design & Microcopy | `references/08-content-design-microcopy.md` | Candidate | Passed | Passed | Pending | Revisit rendered, localization, assistive-technology, and user evidence in Phase 6 |
 | 10 | Ethics & Privacy | `references/09-ethics-privacy-policy.md` | Not started | — | — | — | Define dark-pattern, consent, privacy, AI, and automation policies |
 | 11 | Quality Assurance | `references/10-quality-assurance.md` | Not started | — | — | — | Consolidate review gates, severity, evidence, and release decisions |
 
@@ -109,15 +109,15 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 
 ## Immediate work queue
 
-### Priority 1 — Dashboard & Data Visualization
+### Priority 1 — Ethics & Privacy
 
-1. Create `references/05-dashboard-data-visualization.md` and checklist.
-2. Define KPI, chart selection, scales, comparison, filters, missing data, uncertainty, and misleading-visualization rules.
+1. Create `references/09-ethics-privacy-policy.md` and checklist.
+2. Define dark-pattern, consent, refusal, privacy, cancellation, AI, automated-decision, and notification policies.
 3. Audit and validate the standard to Candidate.
 
-### Priority 2 — Content Design & Microcopy
+### Priority 2 — Quality Assurance
 
-Create CT after the dashboard terminology and data-label requirements are structurally established.
+Create the consolidated QA standard after EP establishes release-blocking trust requirements.
 
 ## Stable-status work still required
 

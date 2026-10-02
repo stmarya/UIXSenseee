@@ -4,6 +4,8 @@
 
 ### Added
 
+- Content Design & Microcopy internal audit, controlled workflow validation, and regression fixtures.
+
 - Complete Content Design & Microcopy draft CT-001 through CT-010 and review checklist.
 
 - Dashboard & Data Visualization internal audit, workflow validation, and fixtures.
@@ -56,6 +58,10 @@
 - Visual Foundation regression fixtures.
 
 ### Changed
+
+- Promoted Content Design & Microcopy from Draft to Candidate.
+- Completed Phase 4 and started Phase 5 Trust & Release Governance.
+- Updated weighted project progress from 57% to 61% and Candidate coverage from 73% to 82%.
 
 - Updated weighted project progress from 55% to 57% and document coverage from 73% to 82%.
 

@@ -1,8 +1,8 @@
 # Content Design & Microcopy
 
 - **Document ID:** UIXS-CT
-- **Version:** 0.10.0
-- **Status:** Draft
+- **Version:** 0.11.0
+- **Status:** Candidate
 - **Owner:** UIXSenseee maintainers
 - **Last updated:** 2026-10-01
 - **Related standards:** FP, IA, VF, IN, CB, DV, AX, RS, EP, QA
@@ -20,7 +20,7 @@ CT owns interface language, terminology, formatting, and content behavior. IA ow
 ## CT-001 — Use language users recognize
 
 **Level:** MUST  
-**Status:** Draft
+**Status:** Candidate
 
 ### Rule
 
@@ -62,7 +62,7 @@ Fail when content hides consequence, causes task error, misrepresents data or AI
 ## CT-002 — Write descriptive titles, labels, and actions
 
 **Level:** MUST  
-**Status:** Draft
+**Status:** Candidate
 
 ### Rule
 
@@ -104,7 +104,7 @@ Fail when content hides consequence, causes task error, misrepresents data or AI
 ## CT-003 — Provide timely instructions and form guidance
 
 **Level:** MUST  
-**Status:** Draft
+**Status:** Candidate
 
 ### Rule
 
@@ -146,7 +146,7 @@ Fail when content hides consequence, causes task error, misrepresents data or AI
 ## CT-004 — Write errors that support recovery
 
 **Level:** MUST  
-**Status:** Draft
+**Status:** Candidate
 
 ### Rule
 
@@ -188,7 +188,7 @@ Fail when content hides consequence, causes task error, misrepresents data or AI
 ## CT-005 — Distinguish loading, empty, no-result, success, and status content
 
 **Level:** MUST  
-**Status:** Draft
+**Status:** Candidate
 
 ### Rule
 
@@ -230,7 +230,7 @@ Fail when content hides consequence, causes task error, misrepresents data or AI
 ## CT-006 — Write confirmations and destructive warnings proportionally
 
 **Level:** MUST  
-**Status:** Draft
+**Status:** Candidate
 
 ### Rule
 
@@ -272,7 +272,7 @@ Fail when content hides consequence, causes task error, misrepresents data or AI
 ## CT-007 — Govern terminology and naming
 
 **Level:** MUST  
-**Status:** Draft
+**Status:** Candidate
 
 ### Rule
 
@@ -314,7 +314,7 @@ Fail when content hides consequence, causes task error, misrepresents data or AI
 ## CT-008 — Format numbers, dates, time, currency, and units clearly
 
 **Level:** MUST  
-**Status:** Draft
+**Status:** Candidate
 
 ### Rule
 
@@ -356,7 +356,7 @@ Fail when content hides consequence, causes task error, misrepresents data or AI
 ## CT-009 — Design for localization and inclusive language
 
 **Level:** MUST  
-**Status:** Draft
+**Status:** Candidate
 
 ### Rule
 
@@ -398,7 +398,7 @@ Fail when content hides consequence, causes task error, misrepresents data or AI
 ## CT-010 — Communicate data, AI, help, and provenance responsibly
 
 **Level:** MUST  
-**Status:** Draft
+**Status:** Candidate
 
 ### Rule
 
@@ -457,3 +457,8 @@ Conformance requires CT-001 through CT-010, realistic-content review, terminolog
 - [GOV.UK Content Design](https://www.gov.uk/guidance/content-design)
 - [W3C WCAG 2.2](https://www.w3.org/TR/WCAG22/)
 - [W3C Labels or Instructions](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html)
+
+
+## Candidate validation status
+
+Internal structural audit and controlled workflow validation passed on 2026-10-01. The validation routed all ten main rules, preserved one-primary-rule ownership, and detected all seeded findings. Candidate status does not imply Stable: rendered-interface, assistive-technology, localization, and representative-user evidence remain required.

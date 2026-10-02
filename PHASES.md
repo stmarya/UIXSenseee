@@ -1,8 +1,8 @@
 # UIXSenseee Delivery Phases
 
 - **Last updated:** 2026-10-01
-- **Current phase:** Phase 4 — Data & Communication
-- **Overall progress toward Stable:** 57%
+- **Current phase:** Phase 5 — Trust & Release Governance
+- **Overall progress toward Stable:** 61%
 - **Canonical progress record:** `STATUS.md`
 
 This document divides all remaining work into ordered delivery phases. A phase may begin in preparation before the previous phase is fully Stable, but it may not be marked complete until its exit criteria are satisfied.
@@ -22,7 +22,7 @@ This document divides all remaining work into ordered delivery phases. A phase m
 | 1 | Core Foundations | FP, IA, VF | Completed | FP, IA, and VF Candidate |
 | 2 | Interaction Architecture | IN, CB | Completed | IN and CB Candidate |
 | 3 | Inclusive & Adaptive Systems | AX, RS | Completed | AX and RS Candidate |
-| 4 | Data & Communication | DV, CT | In progress | DV Candidate; CT Draft complete |
+| 4 | Data & Communication | DV, CT | Completed | DV and CT Candidate |
 | 5 | Trust & Release Governance | EP, QA | Planned | Not started |
 | 6 | Integration & Stable Release | Cross-standard validation and release | Planned | Not started |
 
@@ -225,8 +225,8 @@ Phase 1 Candidate exit criteria are complete. Stable evidence remains scheduled 
 
 ## Phase 4 — Data & Communication
 
-**Status:** In progress
-**Immediate next action:** Run Content Design internal audit and workflow validation.
+**Status:** Completed
+**Immediate next action:** Phase 4 Candidate exit criteria are complete; Stable evidence remains Phase 6 work.
 
 ### Scope
 
@@ -265,8 +265,8 @@ Phase 1 Candidate exit criteria are complete. Stable evidence remains scheduled 
 - [x] Dashboard workflow validation
 - [x] Dashboard Candidate promotion
 - [x] Content Design & Microcopy draft
-- [ ] Content internal audit and workflow validation
-- [ ] Content Candidate promotion
+- [x] Content internal audit and workflow validation
+- [x] Content Candidate promotion
 
 ### Deliverables
 
@@ -287,7 +287,8 @@ Phase 1 Candidate exit criteria are complete. Stable evidence remains scheduled 
 
 ## Phase 5 — Trust & Release Governance
 
-**Status:** Planned
+**Status:** In progress
+**Immediate next action:** Create the Ethics & Privacy draft and checklist.
 
 ### Scope
 
