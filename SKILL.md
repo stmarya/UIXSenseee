@@ -37,6 +37,8 @@ Mark missing information as an assumption. Do not silently invent business requi
 ## Reference selection
 
 - Information structure, navigation, hierarchy, labels, findability: `references/01-information-architecture.md`
+- Visual hierarchy, layout, spacing, typography, color, surfaces, and iconography: `references/02-visual-foundation.md`
+- Visual Foundation review: `checklists/visual-foundation-review.md`
 - Information Architecture audit: `checklists/information-architecture-review.md`
 - General design review: `checklists/design-review.md`
 - Release decision: `checklists/release-gate.md`

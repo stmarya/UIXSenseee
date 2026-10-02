@@ -4,6 +4,10 @@
 
 ### Added
 
+- Visual Foundation document structure, terminology, principles, and evidence basis.
+- VF-001: Establish purposeful visual hierarchy.
+- Initial Visual Foundation review checklist.
+
 - IA-003: Use clear, descriptive, and consistent labels.
 - IA-004: Provide effective wayfinding.
 - IA-005: Separate navigation, search, filter, and sort.
