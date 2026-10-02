@@ -63,10 +63,12 @@ When reviewing a design, provide:
 
 - summary and scope;
 - assumptions;
+- applicability: rules selected and rules excluded;
 - findings grouped by severity;
-- affected rule IDs;
+- one primary rule ID and optional related rule IDs per finding;
 - recommended corrections;
 - exceptions and residual risks;
+- verification method for each correction;
 - final result: Pass, Conditional Pass, or Fail.
 
 ## Exceptions

@@ -1,8 +1,8 @@
 # Information Architecture
 
 - **Document ID:** UIXS-IA
-- **Version:** 0.6.1
-- **Status:** Draft
+- **Version:** 0.7.0
+- **Status:** Candidate
 - **Related standards:** FP, CT, AX, RS, QA
 - **Owner:** UIXSenseee maintainers
 - **Last updated:** 2026-10-01
@@ -664,3 +664,10 @@ These sources provide the baseline evidence used by the Information Architecture
 - [W3C: Labels or Instructions](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html) — persistent and understandable labels and instructions.
 - [GOV.UK: Writing for User Interfaces](https://www.gov.uk/service-manual/design/writing-for-user-interfaces) — concise, task-oriented interface language.
 
+
+
+## Validation status
+
+The IA workflow passed three controlled representative scenarios covering dashboard navigation, search/filter/sort state, and taxonomy governance. The tests confirmed rule routing, severity decisions, overlap deduplication, actionable remediation, and conformance outcomes. See `validation/2026-10-01-information-architecture-workflow.md`.
+
+Candidate status means the workflow is ready for broader testing. It does not replace usability research or validation with representative users before Stable status.

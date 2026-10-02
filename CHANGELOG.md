@@ -13,6 +13,13 @@
 - Information Architecture conformance and required-evidence section.
 - IA internal audit report and dedicated rule-mapped audit checklist.
 - IA table of contents, governance metadata, evidence basis, and overlap ownership model.
+- Controlled IA workflow validation across dashboard, collection-control, and taxonomy scenarios.
+- IA validation fixtures and applicability preflight.
+
+### Changed
+
+- Promoted Information Architecture from Draft to Candidate after workflow validation.
+- Expanded audit output contract with applicability, primary/related rule ownership, and verification methods.
 
 ## 0.1.0-draft — 2026-10-01
 

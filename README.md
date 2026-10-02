@@ -17,12 +17,13 @@ UIXSenseee is a technology-agnostic UI/UX standard and review skill for humans a
 - `checklists/` — review and release checks.
 - `templates/` — reusable rule, audit, and exception formats.
 - `audits/` — dated internal conformance and consistency audits.
+- `validation/` — workflow validation reports and regression fixtures.
 - `GOVERNANCE.md` — precedence, versioning, and change policy.
 - `CHANGELOG.md` — record of normative changes.
 
 ## Current status
 
-Version `0.1.0-draft`. Foundation Principles and the audited Information Architecture draft (IA-001 through IA-008) are available. The IA draft passes internal structural audit but still requires workflow validation before Candidate status.
+Version `0.1.0-draft`. Foundation Principles and the audited Information Architecture draft (IA-001 through IA-008) are available. The Information Architecture standard has passed internal structural audit and controlled workflow validation. It is now Candidate and requires rendered-interface, accessibility, localization, and representative-user validation before Stable status.
 
 ## Planned standards
 

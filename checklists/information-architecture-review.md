@@ -7,6 +7,14 @@
 
 Use this checklist after selecting only the rules relevant to the reviewed product and flow. Record evidence, severity, owner, and resolution for every failed item.
 
+## Applicability preflight
+
+- [ ] Review scope, users, tasks, entry points, and risk are stated.
+- [ ] Relevant IA rules are selected before detailed evaluation.
+- [ ] Excluded IA rules have a short applicability reason.
+- [ ] One primary owner rule is selected for overlapping symptoms.
+- [ ] Expected output includes evidence, severity, primary rule, related rules, correction, and verification.
+
 ## IA-001 — User tasks
 
 - [ ] Primary users, goals, frequent tasks, critical information, and risks are documented.
