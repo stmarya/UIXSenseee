@@ -4,6 +4,8 @@
 
 ### Added
 
+- Root `STATUS.md` as the canonical project roadmap, progress calculation, work queue, and contributor handoff record.
+
 - Visual Foundation document structure, terminology, principles, and evidence basis.
 - VF-001: Establish purposeful visual hierarchy.
 - VF-002: Use coherent layout, grid, and alignment.

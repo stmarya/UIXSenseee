@@ -9,8 +9,13 @@ UIXSenseee is a technology-agnostic UI/UX standard and review skill for humans a
 - Provide specialized guidance for dashboards and data-heavy products.
 - Separate standards, operational checklists, reusable templates, and examples.
 
+## Current progress
+
+See [`STATUS.md`](STATUS.md) for the canonical roadmap, completion percentage, current focus, pending work, and contributor handoff procedure.
+
 ## Repository map
 
+- `STATUS.md` — canonical progress, roadmap, and team handoff record.
 - `SKILL.md` — operational instructions for AI models.
 - `AGENTS.md` — instructions for agents modifying this repository.
 - `references/` — normative standards and supporting rationale.
