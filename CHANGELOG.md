@@ -5,6 +5,8 @@
 ### Added
 
 - Root `STATUS.md` as the canonical project roadmap, progress calculation, work queue, and contributor handoff record.
+- Root `PHASES.md` dividing remaining work into seven delivery phases with scope, deliverables, dependencies, and exit criteria.
+- Mandatory same-commit progress update policy for standards, checklists, audits, validations, and fixtures.
 
 - Visual Foundation document structure, terminology, principles, and evidence basis.
 - VF-001: Establish purposeful visual hierarchy.

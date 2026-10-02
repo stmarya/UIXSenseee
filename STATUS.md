@@ -1,7 +1,7 @@
 # UIXSenseee Project Status
 
 - **Last updated:** 2026-10-01
-- **Current phase:** Standards development
+- **Current phase:** Phase 1 — Core Foundations
 - **Current focus:** Foundation Principles audit and validation
 - **Next standard:** Interaction Standards
 - **Overall progress toward Stable:** 16%
@@ -38,6 +38,20 @@ Eight remaining areas:      Not started = 0
 
 Total: 175 / (11 × 100) = 15.9% → 16%
 ```
+
+## Phase roadmap
+
+Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
+
+| Phase | Name | Status | Progress marker |
+|---:|---|---|---|
+| 0 | Repository Foundation | Completed | Infrastructure and handoff available |
+| 1 | Core Foundations | In progress | IA and VF Candidate; FP Draft |
+| 2 | Interaction Architecture | Planned | IN and CB not started |
+| 3 | Inclusive & Adaptive Systems | Planned | AX and RS not started |
+| 4 | Data & Communication | Planned | DV and CT not started |
+| 5 | Trust & Release Governance | Planned | EP and QA not started |
+| 6 | Integration & Stable Release | Planned | Starts after all standards reach Candidate |
 
 ## Standards roadmap
 
@@ -132,6 +146,17 @@ Candidate documents are not Stable. Before the full skill can be declared Stable
 - rare-state and permission-state regression;
 - cross-standard integration audit;
 - final QA and release-gate review.
+
+## Mandatory progress update
+
+Every completed document addition or lifecycle event MUST update:
+
+- the relevant checklist in `PHASES.md`;
+- the related standard row and percentages in this file;
+- `CHANGELOG.md`;
+- current phase and next action when they change.
+
+A document-only commit without progress tracking is incomplete.
 
 ## Handoff procedure
 
