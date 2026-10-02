@@ -6,6 +6,8 @@
 
 - Interaction Standards document structure, terminology, principles, and evidence basis.
 - IN-001: Make interactions discoverable and predictable.
+- IN-002 through IN-010 covering affordances, feedback, states, asynchronous behavior, motion, errors, recovery, destructive actions, and input modalities.
+- Interaction Standards conformance and required-evidence policy.
 - Initial Interaction Standards review checklist.
 
 - Controlled Foundation Principles workflow validation and regression fixtures.

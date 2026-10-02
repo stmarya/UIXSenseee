@@ -100,7 +100,7 @@ Phase 1 Candidate exit criteria are complete. Stable evidence remains scheduled 
 ## Phase 2 — Interaction Architecture
 
 **Status:** In progress
-**Immediate next action:** Draft IN-002 — Provide clear affordances and signifiers.
+**Immediate next action:** Run Interaction Standards internal audit.
 
 ### Scope
 
@@ -137,7 +137,7 @@ Phase 1 Candidate exit criteria are complete. Stable evidence remains scheduled 
 
 - [x] Interaction Standards document structure
 - [x] IN-001 — Make interactions discoverable and predictable
-- [ ] IN-002 through IN-010
+- [x] IN-002 through IN-010
 - [ ] Interaction Standards internal audit
 - [ ] Interaction Standards workflow validation
 - [ ] Interaction Standards Candidate promotion

@@ -2,7 +2,7 @@
 
 - **Last updated:** 2026-10-01
 - **Current phase:** Phase 2 — Interaction Architecture
-- **Current focus:** Draft IN-002 — Provide clear affordances and signifiers
+- **Current focus:** Run Interaction Standards internal audit
 - **Next standard:** Interaction Standards
 - **Overall progress toward Stable:** 23%
 
@@ -61,7 +61,7 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 | 1 | Foundation Principles | `references/00-foundation-principles.md` | Candidate | Passed | Passed | Pending | Revisit integrated Stable evidence in Phase 6 |
 | 2 | Information Architecture | `references/01-information-architecture.md` | Candidate | Passed | Passed | Pending | Rendered dashboard, keyboard/screen-reader, tree testing, localization |
 | 3 | Visual Foundation | `references/02-visual-foundation.md` | Candidate | Passed | Passed | Pending | Rendered hierarchy, contrast, focus, reflow, icon, and theme tests |
-| 4 | Interaction Standards | `references/03-interaction-standards.md` | Draft | Pending | Pending | Pending | Draft IN-002, then complete remaining IN rules |
+| 4 | Interaction Standards | `references/03-interaction-standards.md` | Draft | Pending | Pending | Pending | Run internal audit, then workflow validation |
 | 5 | Component Behavior | `references/04-component-behavior.md` | Not started | — | — | — | Start after Interaction Standards draft |
 | 6 | Dashboard & Data Visualization | `references/05-dashboard-data-visualization.md` | Not started | — | — | — | Define KPI, chart, axis, filter, uncertainty, and data-honesty rules |
 | 7 | Accessibility | `references/06-accessibility.md` | Not started | — | — | — | Establish WCAG 2.2 AA baseline and cross-standard authority |
@@ -104,12 +104,12 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 
 ## Immediate work queue
 
-### Priority 1 — Complete Interaction Standards draft
+### Priority 1 — Audit and validate Interaction Standards
 
-1. Draft IN-002 — Provide clear affordances and signifiers.
-2. Continue IN-003 through IN-010.
-3. Complete conformance, ownership boundaries, and required evidence.
-4. Run internal audit and controlled workflow validation.
+1. Run mechanical and overlap audit for IN-001 through IN-010.
+2. Resolve ownership with VF, CB, AX, RS, CT, and EP.
+3. Create the audit report and update the checklist.
+4. Run controlled workflow validation.
 5. Promote Interaction Standards to Candidate if validation passes.
 
 ### Priority 2 — Remaining Phase 2 standards
