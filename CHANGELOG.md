@@ -4,6 +4,8 @@
 
 ### Added
 
+- Complete Dashboard & Data Visualization draft DV-001 through DV-010 and review checklist.
+
 - Responsive internal audit, workflow validation, and regression fixtures.
 
 - Complete Responsive & Adaptive Design draft RS-001 through RS-010 and review checklist.
@@ -50,6 +52,9 @@
 - Visual Foundation regression fixtures.
 
 ### Changed
+
+- Updated weighted project progress from 48% to 50% and document coverage from 64% to 73%.
+
 
 - Promoted Responsive & Adaptive Design from Draft to Candidate.
 - Completed Phase 3 and started Phase 4 Data & Communication.

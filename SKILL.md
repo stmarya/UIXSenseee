@@ -46,6 +46,8 @@ Mark missing information as an assumption. Do not silently invent business requi
 - Accessibility review: `checklists/accessibility-review.md`
 - Responsive and adaptive priority, reflow, navigation, forms, collections, charts, modality, localization, and state: `references/07-responsive-adaptive-design.md`
 - Responsive review: `checklists/responsive-adaptive-review.md`
+- Dashboard, KPI, metric, chart, scale, comparison, filter, data quality, and uncertainty: `references/05-dashboard-data-visualization.md`
+- Dashboard and visualization review: `checklists/dashboard-data-visualization-review.md`
 - Visual Foundation review: `checklists/visual-foundation-review.md`
 - Information Architecture audit: `checklists/information-architecture-review.md`
 - General design review: `checklists/design-review.md`

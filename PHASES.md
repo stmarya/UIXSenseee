@@ -2,7 +2,7 @@
 
 - **Last updated:** 2026-10-01
 - **Current phase:** Phase 4 — Data & Communication
-- **Overall progress toward Stable:** 48%
+- **Overall progress toward Stable:** 50%
 - **Canonical progress record:** `STATUS.md`
 
 This document divides all remaining work into ordered delivery phases. A phase may begin in preparation before the previous phase is fully Stable, but it may not be marked complete until its exit criteria are satisfied.
@@ -22,7 +22,7 @@ This document divides all remaining work into ordered delivery phases. A phase m
 | 1 | Core Foundations | FP, IA, VF | Completed | FP, IA, and VF Candidate |
 | 2 | Interaction Architecture | IN, CB | Completed | IN and CB Candidate |
 | 3 | Inclusive & Adaptive Systems | AX, RS | Completed | AX and RS Candidate |
-| 4 | Data & Communication | DV, CT | In progress | Starting Dashboard & Data Visualization |
+| 4 | Data & Communication | DV, CT | In progress | DV Draft complete |
 | 5 | Trust & Release Governance | EP, QA | Planned | Not started |
 | 6 | Integration & Stable Release | Cross-standard validation and release | Planned | Not started |
 
@@ -226,7 +226,7 @@ Phase 1 Candidate exit criteria are complete. Stable evidence remains scheduled 
 ## Phase 4 — Data & Communication
 
 **Status:** In progress
-**Immediate next action:** Create Dashboard & Data Visualization draft.
+**Immediate next action:** Run Dashboard & Data Visualization internal audit and workflow validation.
 
 ### Scope
 
@@ -257,6 +257,16 @@ Phase 1 Candidate exit criteria are complete. Stable evidence remains scheduled 
 - Terminology governance
 - Number, date, currency, and units
 - Localization
+
+### Progress
+
+- [x] Dashboard & Data Visualization draft
+- [ ] Dashboard internal audit
+- [ ] Dashboard workflow validation
+- [ ] Dashboard Candidate promotion
+- [ ] Content Design & Microcopy draft
+- [ ] Content internal audit and workflow validation
+- [ ] Content Candidate promotion
 
 ### Deliverables
 
