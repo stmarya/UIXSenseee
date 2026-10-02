@@ -2,9 +2,9 @@
 
 - **Last updated:** 2026-10-01
 - **Current phase:** Phase 3 — Inclusive & Adaptive Systems
-- **Current focus:** Run Accessibility internal audit and workflow validation
+- **Current focus:** Create Responsive & Adaptive Design standard
 - **Next standard:** Interaction Standards
-- **Overall progress toward Stable:** 36%
+- **Overall progress toward Stable:** 41%
 
 This file is the canonical handoff and progress record for contributors and AI agents. Read it before starting work and update it in the same commit as any status-changing work.
 
@@ -13,9 +13,9 @@ This file is the canonical handoff and progress record for contributors and AI a
 | Metric | Current | Calculation |
 |---|---:|---|
 | Standard areas with a document | 6 of 11 | 55% |
-| Standard areas at Candidate | 5 of 11 | 45% |
+| Standard areas at Candidate | 6 of 11 | 55% |
 | Standard areas at Stable | 0 of 11 | 0% |
-| Weighted progress toward Stable | 400 of 1,100 points | 36% rounded |
+| Weighted progress toward Stable | 450 of 1,100 points | 41% rounded |
 
 ## Lifecycle and weights
 
@@ -36,10 +36,10 @@ Information Architecture:  Candidate = 75
 Visual Foundation:          Candidate = 75
 Interaction Standards:     Candidate = 75
 Component Behavior:        Candidate = 75
-Accessibility:             Draft = 25
+Accessibility:             Candidate = 75
 Five remaining areas:       Not started = 0
 
-Total: 400 / (11 × 100) = 36.4% → 36%
+Total: 450 / (11 × 100) = 40.9% → 41%
 ```
 
 ## Phase roadmap
@@ -51,7 +51,7 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 | 0 | Repository Foundation | Completed | Infrastructure and handoff available |
 | 1 | Core Foundations | Completed | FP, IA, and VF Candidate |
 | 2 | Interaction Architecture | Completed | IN and CB Candidate |
-| 3 | Inclusive & Adaptive Systems | In progress | Accessibility Draft complete |
+| 3 | Inclusive & Adaptive Systems | In progress | Accessibility Candidate; starting Responsive |
 | 4 | Data & Communication | Planned | DV and CT not started |
 | 5 | Trust & Release Governance | Planned | EP and QA not started |
 | 6 | Integration & Stable Release | Planned | Starts after all standards reach Candidate |
@@ -66,7 +66,7 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 | 4 | Interaction Standards | `references/03-interaction-standards.md` | Candidate | Passed | Passed | Pending | Revisit Stable evidence in Phase 6 |
 | 5 | Component Behavior | `references/04-component-behavior.md` | Candidate | Passed | Passed | Pending | Revisit Stable evidence in Phase 6 |
 | 6 | Dashboard & Data Visualization | `references/05-dashboard-data-visualization.md` | Not started | — | — | — | Define KPI, chart, axis, filter, uncertainty, and data-honesty rules |
-| 7 | Accessibility | `references/06-accessibility.md` | Draft | Pending | Pending | Pending | Run internal audit and workflow validation |
+| 7 | Accessibility | `references/06-accessibility.md` | Candidate | Passed | Passed | Pending | Complete criterion-level Stable evidence in Phase 6 |
 | 8 | Responsive & Adaptive Design | `references/07-responsive-adaptive-design.md` | Not started | — | — | — | Define reflow, priority, input modality, tables, charts, and density |
 | 9 | Content Design & Microcopy | `references/08-content-design-microcopy.md` | Not started | — | — | — | Define language, labels, errors, empty states, formats, and localization |
 | 10 | Ethics & Privacy | `references/09-ethics-privacy-policy.md` | Not started | — | — | — | Define dark-pattern, consent, privacy, AI, and automation policies |

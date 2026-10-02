@@ -4,6 +4,8 @@
 
 ### Added
 
+- Accessibility internal audit, workflow validation, fixtures, and WCAG 2.2 routing map.
+
 - Complete Accessibility draft AX-001 through AX-010 with WCAG 2.2 AA baseline and rule-mapped checklist.
 
 - Component Behavior internal audit, workflow validation, and regression fixtures.
@@ -44,6 +46,10 @@
 - Visual Foundation regression fixtures.
 
 ### Changed
+
+- Promoted Accessibility from Draft to Candidate.
+- Updated weighted project progress from 36% to 41%.
+
 
 - Updated weighted project progress from 34% to 36% and document coverage from 45% to 55%.
 

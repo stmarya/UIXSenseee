@@ -1,8 +1,8 @@
 # Accessibility
 
 - **Document ID:** UIXS-AX
-- **Version:** 0.10.0
-- **Status:** Draft
+- **Version:** 0.11.0
+- **Status:** Candidate
 - **Owner:** UIXSenseee maintainers
 - **Last updated:** 2026-10-01
 - **Conformance baseline:** WCAG 2.2 Level AA where applicable
@@ -470,3 +470,8 @@ Conformance requires all applicable WCAG 2.2 Level A and AA criteria across comp
 - [W3C Understanding WCAG 2.2](https://www.w3.org/WAI/WCAG22/Understanding/)
 - [WAI ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/)
 - [WAI Forms Tutorials](https://www.w3.org/WAI/tutorials/forms/)
+
+
+## Validation status
+
+Internal audit and controlled workflow validation passed on 2026-10-01. Accessibility is Candidate with 10 main rules and 80 unique sub-rules. Candidate status does not constitute product WCAG conformance; rendered complete-process testing remains required.
