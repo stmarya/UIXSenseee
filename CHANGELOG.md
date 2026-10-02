@@ -11,6 +11,8 @@
 - IA-007: Apply progressive disclosure without hiding critical information.
 - IA-008: Design scalable taxonomies.
 - Information Architecture conformance and required-evidence section.
+- IA internal audit report and dedicated rule-mapped audit checklist.
+- IA table of contents, governance metadata, evidence basis, and overlap ownership model.
 
 ## 0.1.0-draft — 2026-10-01
 

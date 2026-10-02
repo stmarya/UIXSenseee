@@ -1,9 +1,31 @@
 # Information Architecture
 
 - **Document ID:** UIXS-IA
-- **Version:** 0.6.0
+- **Version:** 0.6.1
 - **Status:** Draft
 - **Related standards:** FP, CT, AX, RS, QA
+- **Owner:** UIXSenseee maintainers
+- **Last updated:** 2026-10-01
+- **Review cadence:** On normative change and before each stable release
+
+## Contents
+
+- [Purpose](#purpose)
+- [Scope](#scope)
+- [Out of scope](#out-of-scope)
+- [Terminology](#terminology)
+- [Core principles](#core-principles)
+- [IA-001 — Organize information around user tasks](#ia-001--organize-information-around-user-tasks)
+- [IA-002 — Define a clear and predictable hierarchy](#ia-002--define-a-clear-and-predictable-hierarchy)
+- [IA-003 — Use clear, descriptive, and consistent labels](#ia-003--use-clear-descriptive-and-consistent-labels)
+- [IA-004 — Provide effective wayfinding](#ia-004--provide-effective-wayfinding)
+- [IA-005 — Separate navigation, search, filter, and sort](#ia-005--separate-navigation-search-filter-and-sort)
+- [IA-006 — Preserve context across navigation](#ia-006--preserve-context-across-navigation)
+- [IA-007 — Apply progressive disclosure without hiding critical information](#ia-007--apply-progressive-disclosure-without-hiding-critical-information)
+- [IA-008 — Design scalable taxonomies](#ia-008--design-scalable-taxonomies)
+- [Rule boundaries](#rule-boundaries)
+- [Information Architecture conformance](#information-architecture-conformance)
+- [Evidence basis](#evidence-basis)
 
 ## Purpose
 
@@ -598,6 +620,21 @@ Fail when category boundaries are undefined, duplicates change meaning, taxonomy
 
 ---
 
+
+## Rule boundaries
+
+Some requirements intentionally meet at the boundary between structure, orientation, and state. Apply the following ownership model to avoid duplicate or conflicting findings:
+
+- **IA-002 owns structural hierarchy:** whether parent–child relationships and a structural route back exist.
+- **IA-004 owns wayfinding presentation:** whether users can perceive current location, parent context, active destination, and a usable route back.
+- **IA-006 owns state persistence:** whether query, filters, sort, period, selection, draft, and scope survive or reset safely across that route.
+- **IA-003 owns terminology:** whether labels used by IA-002, IA-004, and IA-005 communicate a distinct meaning.
+- **IA-005 owns control purpose:** whether navigation, search, filter, sort, and commands produce the promised type of outcome.
+- **IA-007 owns disclosure:** whether detail is staged without hiding primary, critical, or active context.
+- **IA-008 owns classification governance:** whether categories and facets remain stable, distinct, and maintainable over time.
+
+When one problem violates several rules, record one primary finding under the owning rule and list the others as related rules. Do not inflate severity by counting the same user problem several times.
+
 ## Information Architecture conformance
 
 A design conforms to this document only when every relevant MUST and MUST NOT requirement from IA-001 through IA-008 is satisfied or has an approved exception. SHOULD findings may produce Conditional Pass when they do not block safe task completion and have an owner, rationale, and review date.
@@ -614,3 +651,16 @@ A design conforms to this document only when every relevant MUST and MUST NOT re
 - taxonomy definitions and ownership;
 - completed design-review checklist;
 - documented exceptions.
+
+
+## Evidence basis
+
+These sources provide the baseline evidence used by the Information Architecture standard. Product-specific rules still require validation with representative users and domain evidence.
+
+- [GOV.UK Government Design Principles](https://www.gov.uk/guidance/government-design-principles) — start with user needs; be consistent, not uniform.
+- [Nielsen Norman Group: 10 Usability Heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/) — system status, user control, consistency, recognition, error prevention, and minimalist design.
+- [Nielsen Norman Group: Progressive Disclosure](https://www.nngroup.com/articles/progressive-disclosure/) — stage advanced or secondary complexity while keeping primary tasks available.
+- [W3C WCAG 2.2](https://www.w3.org/TR/WCAG22/) — perceivable, operable, understandable, and robust interaction requirements.
+- [W3C: Labels or Instructions](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html) — persistent and understandable labels and instructions.
+- [GOV.UK: Writing for User Interfaces](https://www.gov.uk/service-manual/design/writing-for-user-interfaces) — concise, task-oriented interface language.
+
