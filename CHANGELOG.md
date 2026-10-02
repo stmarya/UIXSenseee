@@ -4,6 +4,8 @@
 
 ### Added
 
+- Complete Content Design & Microcopy draft CT-001 through CT-010 and review checklist.
+
 - Dashboard & Data Visualization internal audit, workflow validation, and fixtures.
 
 - Complete Dashboard & Data Visualization draft DV-001 through DV-010 and review checklist.
@@ -54,6 +56,9 @@
 - Visual Foundation regression fixtures.
 
 ### Changed
+
+- Updated weighted project progress from 55% to 57% and document coverage from 73% to 82%.
+
 
 - Promoted Dashboard & Data Visualization from Draft to Candidate.
 - Updated weighted project progress from 50% to 55%.

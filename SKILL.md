@@ -48,6 +48,8 @@ Mark missing information as an assumption. Do not silently invent business requi
 - Responsive review: `checklists/responsive-adaptive-review.md`
 - Dashboard, KPI, metric, chart, scale, comparison, filter, data quality, and uncertainty: `references/05-dashboard-data-visualization.md`
 - Dashboard and visualization review: `checklists/dashboard-data-visualization-review.md`
+- Interface language, labels, instructions, errors, status, terminology, formats, localization, and AI/data disclosure: `references/08-content-design-microcopy.md`
+- Content Design review: `checklists/content-design-review.md`
 - Visual Foundation review: `checklists/visual-foundation-review.md`
 - Information Architecture audit: `checklists/information-architecture-review.md`
 - General design review: `checklists/design-review.md`
