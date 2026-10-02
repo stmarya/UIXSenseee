@@ -4,6 +4,9 @@
 
 ### Added
 
+- Interaction Standards internal audit, controlled workflow validation, and regression fixtures.
+- Interaction cross-standard ownership boundaries.
+
 - Interaction Standards document structure, terminology, principles, and evidence basis.
 - IN-001: Make interactions discoverable and predictable.
 - IN-002 through IN-010 covering affordances, feedback, states, asynchronous behavior, motion, errors, recovery, destructive actions, and input modalities.
@@ -35,6 +38,10 @@
 - Visual Foundation regression fixtures.
 
 ### Changed
+
+- Promoted Interaction Standards from Draft to Candidate.
+- Updated weighted project progress from 23% to 27%.
+
 
 - Updated weighted project progress from 20% to 23% and document coverage from 27% to 36%.
 

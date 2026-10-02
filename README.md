@@ -29,7 +29,7 @@ See [`STATUS.md`](STATUS.md) for canonical progress and [`PHASES.md`](PHASES.md)
 
 ## Current status
 
-Foundation Principles, Information Architecture, and Visual Foundation are Candidate. Phase 2 Interaction Architecture is active; Interaction Standards is Draft with IN-001 complete. Canonical details remain in `STATUS.md`.
+Foundation Principles, Information Architecture, and Visual Foundation are Candidate. Phase 2 Interaction Architecture is active; Interaction Standards is Candidate and Component Behavior is next. Canonical details remain in `STATUS.md`.
 
 Version `0.1.0-draft`. Foundation Principles and the audited Information Architecture draft (IA-001 through IA-008) are available. The Information Architecture standard is Candidate after internal audit and controlled workflow validation. The Visual Foundation standard (VF-001 through VF-008) is Candidate after internal audit and controlled workflow validation. Rendered-interface, accessibility, localization, and representative-user validation remain required before Stable status.
 

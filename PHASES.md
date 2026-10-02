@@ -2,7 +2,7 @@
 
 - **Last updated:** 2026-10-01
 - **Current phase:** Phase 2 — Interaction Architecture
-- **Overall progress toward Stable:** 23%
+- **Overall progress toward Stable:** 27%
 - **Canonical progress record:** `STATUS.md`
 
 This document divides all remaining work into ordered delivery phases. A phase may begin in preparation before the previous phase is fully Stable, but it may not be marked complete until its exit criteria are satisfied.
@@ -20,7 +20,7 @@ This document divides all remaining work into ordered delivery phases. A phase m
 |---:|---|---|---|---|
 | 0 | Repository Foundation | Skill, governance, templates, status tracking | Completed | Baseline infrastructure available |
 | 1 | Core Foundations | FP, IA, VF | Completed | FP, IA, and VF Candidate |
-| 2 | Interaction Architecture | IN, CB | In progress | Interaction Standards Draft; IN-001 complete |
+| 2 | Interaction Architecture | IN, CB | In progress | Interaction Standards Candidate; starting Component Behavior |
 | 3 | Inclusive & Adaptive Systems | AX, RS | Planned | Not started |
 | 4 | Data & Communication | DV, CT | Planned | Not started |
 | 5 | Trust & Release Governance | EP, QA | Planned | Not started |
@@ -100,7 +100,7 @@ Phase 1 Candidate exit criteria are complete. Stable evidence remains scheduled 
 ## Phase 2 — Interaction Architecture
 
 **Status:** In progress
-**Immediate next action:** Run Interaction Standards internal audit.
+**Immediate next action:** Create Component Behavior structure and CB-001.
 
 ### Scope
 
@@ -138,9 +138,9 @@ Phase 1 Candidate exit criteria are complete. Stable evidence remains scheduled 
 - [x] Interaction Standards document structure
 - [x] IN-001 — Make interactions discoverable and predictable
 - [x] IN-002 through IN-010
-- [ ] Interaction Standards internal audit
-- [ ] Interaction Standards workflow validation
-- [ ] Interaction Standards Candidate promotion
+- [x] Interaction Standards internal audit
+- [x] Interaction Standards workflow validation
+- [x] Interaction Standards Candidate promotion
 - [ ] Component Behavior draft, audit, validation, and Candidate promotion
 
 ### Deliverables

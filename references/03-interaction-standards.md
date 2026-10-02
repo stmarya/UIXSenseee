@@ -1,8 +1,8 @@
 # Interaction Standards
 
 - **Document ID:** UIXS-IN
-- **Version:** 0.10.0
-- **Status:** Draft
+- **Version:** 0.11.0
+- **Status:** Candidate
 - **Owner:** UIXSenseee maintainers
 - **Last updated:** 2026-10-01
 - **Review cadence:** On normative change and before each stable release
@@ -25,8 +25,8 @@
 - [IN-008 — Support undo, cancellation, and recovery](#in-008--support-undo-cancellation-and-recovery)
 - [IN-009 — Protect destructive and irreversible actions](#in-009--protect-destructive-and-irreversible-actions)
 - [IN-010 — Support keyboard, pointer, touch, and assistive interaction](#in-010--support-keyboard-pointer-touch-and-assistive-interaction)
+- [Rule boundaries](#rule-boundaries)
 - [Interaction Standards conformance](#interaction-standards-conformance)
-- [Planned rules](#planned-rules)
 - [Evidence basis](#evidence-basis)
 
 ## Purpose
@@ -541,6 +541,19 @@ Fail when essential tasks cannot be completed through required modalities, focus
 
 ---
 
+## Rule boundaries
+
+- IN owns interaction behavior, feedback timing, recovery, and input flow.
+- VF owns visual treatment of affordance and states; IN owns what those states mean and do.
+- CB owns component-specific anatomy and behavior; IN owns cross-component interaction policy.
+- AX is authoritative for accessibility conformance, keyboard criteria, focus, timing, and assistive semantics.
+- RS owns adaptive layout and modality changes across viewport conditions.
+- CT owns final labels and messages; IN owns when and where they appear.
+- EP owns consent, manipulation, privacy, and ethical constraints.
+- QA owns severity and release decisions.
+
+Record one primary finding under the most specific owning rule and list other standards as related.
+
 ## Interaction Standards conformance
 
 A design conforms only when every relevant MUST and MUST NOT requirement from IN-001 through IN-010 passes or has an approved exception. SHOULD findings may produce Conditional Pass when no safety, accessibility, correctness, or user-control risk remains.
@@ -564,3 +577,8 @@ A design conforms only when every relevant MUST and MUST NOT requirement from IN
 - [W3C WCAG 2.2](https://www.w3.org/TR/WCAG22/) — keyboard, pointer, target, focus, labels, status, and input-modality requirements.
 - [Material Design 3: Interaction States](https://m3.material.io/foundations/interaction/states) — intentional and consistent component-state communication.
 - [GOV.UK: Writing for User Interfaces](https://www.gov.uk/service-manual/design/writing-for-user-interfaces) — clear action language and task-oriented labels.
+
+
+## Validation status
+
+Internal audit and controlled workflow validation passed on 2026-10-01. Interaction Standards is Candidate with 10 main rules and 114 unique sub-rules. Rendered component, keyboard, screen-reader, motion, timing, and representative-user evidence remain required before Stable status.

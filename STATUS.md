@@ -2,9 +2,9 @@
 
 - **Last updated:** 2026-10-01
 - **Current phase:** Phase 2 — Interaction Architecture
-- **Current focus:** Run Interaction Standards internal audit
+- **Current focus:** Create Component Behavior structure and CB-001
 - **Next standard:** Interaction Standards
-- **Overall progress toward Stable:** 23%
+- **Overall progress toward Stable:** 27%
 
 This file is the canonical handoff and progress record for contributors and AI agents. Read it before starting work and update it in the same commit as any status-changing work.
 
@@ -13,9 +13,9 @@ This file is the canonical handoff and progress record for contributors and AI a
 | Metric | Current | Calculation |
 |---|---:|---|
 | Standard areas with a document | 4 of 11 | 36% |
-| Standard areas at Candidate | 2 of 11 | 18% |
+| Standard areas at Candidate | 4 of 11 | 36% |
 | Standard areas at Stable | 0 of 11 | 0% |
-| Weighted progress toward Stable | 250 of 1,100 points | 23% rounded |
+| Weighted progress toward Stable | 300 of 1,100 points | 27% rounded |
 
 ## Lifecycle and weights
 
@@ -34,10 +34,10 @@ This file is the canonical handoff and progress record for contributors and AI a
 Foundation Principles:      Candidate = 75
 Information Architecture:  Candidate = 75
 Visual Foundation:          Candidate = 75
-Interaction Standards:     Draft = 25
+Interaction Standards:     Candidate = 75
 Seven remaining areas:      Not started = 0
 
-Total: 250 / (11 × 100) = 22.7% → 23%
+Total: 300 / (11 × 100) = 27.3% → 27%
 ```
 
 ## Phase roadmap
@@ -48,7 +48,7 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 |---:|---|---|---|
 | 0 | Repository Foundation | Completed | Infrastructure and handoff available |
 | 1 | Core Foundations | Completed | FP, IA, and VF Candidate |
-| 2 | Interaction Architecture | In progress | Interaction Standards Draft; IN-001 complete |
+| 2 | Interaction Architecture | In progress | Interaction Standards Candidate; starting Component Behavior |
 | 3 | Inclusive & Adaptive Systems | Planned | AX and RS not started |
 | 4 | Data & Communication | Planned | DV and CT not started |
 | 5 | Trust & Release Governance | Planned | EP and QA not started |
@@ -61,7 +61,7 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 | 1 | Foundation Principles | `references/00-foundation-principles.md` | Candidate | Passed | Passed | Pending | Revisit integrated Stable evidence in Phase 6 |
 | 2 | Information Architecture | `references/01-information-architecture.md` | Candidate | Passed | Passed | Pending | Rendered dashboard, keyboard/screen-reader, tree testing, localization |
 | 3 | Visual Foundation | `references/02-visual-foundation.md` | Candidate | Passed | Passed | Pending | Rendered hierarchy, contrast, focus, reflow, icon, and theme tests |
-| 4 | Interaction Standards | `references/03-interaction-standards.md` | Draft | Pending | Pending | Pending | Run internal audit, then workflow validation |
+| 4 | Interaction Standards | `references/03-interaction-standards.md` | Candidate | Passed | Passed | Pending | Revisit Stable evidence in Phase 6 |
 | 5 | Component Behavior | `references/04-component-behavior.md` | Not started | — | — | — | Start after Interaction Standards draft |
 | 6 | Dashboard & Data Visualization | `references/05-dashboard-data-visualization.md` | Not started | — | — | — | Define KPI, chart, axis, filter, uncertainty, and data-honesty rules |
 | 7 | Accessibility | `references/06-accessibility.md` | Not started | — | — | — | Establish WCAG 2.2 AA baseline and cross-standard authority |
@@ -104,13 +104,12 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 
 ## Immediate work queue
 
-### Priority 1 — Audit and validate Interaction Standards
+### Priority 1 — Build Component Behavior
 
-1. Run mechanical and overlap audit for IN-001 through IN-010.
-2. Resolve ownership with VF, CB, AX, RS, CT, and EP.
-3. Create the audit report and update the checklist.
-4. Run controlled workflow validation.
-5. Promote Interaction Standards to Candidate if validation passes.
+1. Create `references/04-component-behavior.md` and a rule-mapped checklist.
+2. Define button/link, forms, selection, tabs/disclosure, overlays, tooltip, notifications, tables, search/filter/pagination, and navigation/menu behavior.
+3. Complete internal audit and workflow validation.
+4. Promote Component Behavior to Candidate and close Phase 2.
 
 ### Priority 2 — Remaining Phase 2 standards
 
