@@ -1,7 +1,7 @@
 # Visual Foundation
 
 - **Document ID:** UIXS-VF
-- **Version:** 0.1.0
+- **Version:** 0.2.0
 - **Status:** Draft
 - **Related standards:** FP, IA, AX, RS, DV, QA
 - **Owner:** UIXSenseee maintainers
@@ -16,6 +16,7 @@
 - [Terminology](#terminology)
 - [Core principles](#core-principles)
 - [VF-001 — Establish purposeful visual hierarchy](#vf-001--establish-purposeful-visual-hierarchy)
+- [VF-002 — Use coherent layout, grid, and alignment](#vf-002--use-coherent-layout-grid-and-alignment)
 - [Planned rules](#planned-rules)
 - [Evidence basis](#evidence-basis)
 
@@ -145,9 +146,104 @@ Equal emphasis MAY be used for genuinely equal options, comparison tasks, or neu
 
 **Fail** when users cannot identify page purpose or primary action, critical information is visually suppressed, visual and semantic order conflict, essential meaning uses one visual cue, or adaptation reverses priority. **Conditional Pass** may cover non-blocking competition between secondary elements with an owner and correction plan. **Pass** requires every relevant MUST and MUST NOT requirement to be satisfied or covered by an approved exception.
 
+---
+
+## VF-002 — Use coherent layout, grid, and alignment
+
+**Level:** MUST  
+**Status:** Draft  
+**Related:** FP-002, FP-004, FP-005, IA-002, IA-004, VF-001, RS
+
+### Rule
+
+Layout, grid, and alignment MUST create a coherent spatial structure that reflects information relationships, supports scanning and comparison, and preserves logical reading and interaction order across content and viewport changes.
+
+### Rationale
+
+A grid is an alignment and relationship system, not a decorative template. Coherent layout helps users predict where information and actions appear, compare values, perceive groups, and maintain orientation. Arbitrary placement, excessive centering, rigid columns, and visual order that differs from semantic order increase cognitive and accessibility costs.
+
+### Layout model
+
+Document the intended structure of each major screen:
+
+- page regions and their purpose;
+- primary content container;
+- column relationships;
+- alignment anchors;
+- fixed, sticky, scrollable, or overlay regions;
+- expected reading and focus order;
+- behavior under narrow width, zoom, localization, and variable content.
+
+### Requirements
+
+- **VF-002-A — Derive layout from tasks and hierarchy — MUST.** Page regions, columns, and ordering must support the primary task and VF-001 hierarchy rather than fill available space symmetrically.
+- **VF-002-B — Establish consistent alignment anchors — MUST.** Related headings, labels, values, controls, and content blocks must share meaningful edges or baselines.
+- **VF-002-C — Use a grid as a relationship system — MUST.** Columns and tracks must express grouping, proportion, or comparison; elements must not snap to a grid when doing so obscures their relationship.
+- **VF-002-D — Preserve logical reading order — MUST.** Visual placement must not contradict semantic, keyboard, or assistive-technology reading order.
+- **VF-002-E — Keep related content spatially connected — MUST.** Labels remain visually associated with values and controls; actions remain associated with the objects they affect.
+- **VF-002-F — Separate unrelated regions — MUST.** Spacing, headings, boundaries, or surfaces must prevent accidental grouping.
+- **VF-002-G — Use predictable page regions — SHOULD.** Global navigation, local navigation, title, scope, primary content, supporting detail, and contextual actions should remain in stable locations within the same product area.
+- **VF-002-H — Size columns according to content purpose — MUST.** Text, tables, charts, forms, and controls require widths that preserve readability, comparison, and operation; equal columns are not a default requirement.
+- **VF-002-I — Avoid arbitrary full-width content — SHOULD NOT.** Use full width only when comparison, visualization, table density, or workflow benefits. Long prose should remain within a readable measure.
+- **VF-002-J — Avoid arbitrary centering — SHOULD NOT.** Center alignment may support short, low-density content but should not be used for long text, forms, tables, or scan-heavy information.
+- **VF-002-K — Reflow without changing meaning — MUST.** Narrow widths and zoom may stack or reorder visual regions only when semantic sequence, task priority, and relationships remain correct.
+- **VF-002-L — Prevent page-level horizontal scrolling — MUST.** The primary page must reflow. Bounded components such as wide tables or timelines MAY scroll horizontally when the boundary, direction, and fixed context are clear.
+- **VF-002-M — Keep sticky and fixed regions safe — MUST.** Persistent headers, sidebars, toolbars, and bottom actions must not cover content, focus indicators, errors, anchors, or keyboard targets.
+- **VF-002-N — Use nested grids deliberately — SHOULD.** A nested grid may support local component alignment but must not break the page's major alignment anchors or create unnecessary visual noise.
+- **VF-002-O — Preserve comparison alignment — MUST.** Comparable values, chart baselines, table columns, and repeated KPI structures must align consistently enough to support accurate comparison.
+- **VF-002-P — Treat cards as groups, not grid filler — MUST.** Card dimensions and placement must reflect relationship and content; empty space must not be filled with unrelated cards solely to complete a row.
+- **VF-002-Q — Avoid masonry for ordered comparison — SHOULD NOT.** Masonry or irregular arrangements must not be used when users need predictable scanning, sequence, or cross-item comparison.
+- **VF-002-R — Support variable content — MUST.** Layout must tolerate long labels, translated text, large numbers, missing data, validation messages, and user-generated content without overlap or lost meaning.
+- **VF-002-S — Support bidirectional layouts when applicable — SHOULD.** Direction-sensitive placement, icons, and alignment must adapt for right-to-left languages without reversing semantic charts or universal controls incorrectly.
+- **VF-002-T — Keep overlays within context — MUST.** Drawers, popovers, menus, dialogs, and tooltips must remain anchored to a perceivable trigger or task context and must not obscure essential information without a route to dismiss or recover.
+- **VF-002-U — Make forms follow completion flow — SHOULD.** A single clear progression is preferred; multi-column form layouts require evidence that fields are independent, short, and read correctly across widths.
+- **VF-002-V — Do not encode importance only by position — MUST NOT.** Position supports hierarchy but requires labels, headings, status, or other cues because reading patterns vary across devices, languages, and assistive technologies.
+
+### Dashboard policy
+
+- Keep page identity, scope, period, and global controls in a stable region.
+- Align repeated KPI labels, values, units, and comparisons.
+- Give trends and diagnostic views enough width to preserve scales and labels.
+- Place filters near the data scope they control and distinguish global from local controls.
+- Avoid forcing every card into equal dimensions when information roles differ.
+- Preserve row and column comparison where comparison is the user task.
+- Move detail below summary on narrow layouts unless the task is direct record manipulation.
+
+### Validation
+
+- **Alignment audit:** draw major vertical and horizontal anchors and identify unexplained offsets.
+- **Reading-order audit:** compare visual order with document, screen-reader, and keyboard order.
+- **Reflow test:** inspect narrow widths and at least 200% zoom without page-level horizontal loss.
+- **Content stress test:** use long translations, maximum values, error messages, missing data, and multiple actions.
+- **Comparison test:** verify comparable metrics and records can be scanned along consistent axes.
+- **Sticky-region test:** navigate anchors and keyboard focus while persistent regions are present.
+- **Bidirectional test:** mirror eligible structure for right-to-left content when supported.
+- **Overlay test:** open menus, drawers, popovers, and dialogs near every viewport edge.
+- **Responsive sequence test:** confirm stacking preserves task priority and semantic order.
+
+### Exceptions
+
+Intentional asymmetry MAY be used to communicate priority or support editorial composition when reading order remains clear. Horizontal scrolling MAY be used inside bounded data components where reflow would destroy comparison. Canvas, map, timeline, and node-graph tools MAY use spatial navigation when controls, orientation, alternatives, and keyboard access are provided.
+
+### Failure examples
+
+- A twelve-column grid is applied even when it breaks label–value relationships.
+- Visual columns are read in a different order by keyboard or screen reader.
+- Every card is stretched to equal height despite unrelated content.
+- A long form uses multiple columns and produces an ambiguous completion order.
+- A sticky header covers focused controls or anchor destinations.
+- The whole page scrolls horizontally at zoomed or narrow widths.
+- A wide chart is compressed until labels and scale become unreadable.
+- Global and local filters appear in one undifferentiated toolbar.
+- Masonry layout prevents row-by-row comparison.
+- Translated labels overlap neighboring controls.
+
+### Acceptance
+
+**Fail** when visual and semantic order conflict, related content becomes detached, page-level reflow fails, persistent regions obscure operation, or layout prevents accurate comparison. **Conditional Pass** may cover non-blocking alignment or density issues with an owner and correction plan. **Pass** requires every relevant MUST and MUST NOT requirement to be satisfied or covered by an approved exception.
+
 ## Planned rules
 
-- VF-002 — Use coherent layout, grid, and alignment.
 - VF-003 — Apply consistent spacing, proximity, and density.
 - VF-004 — Build a readable and scalable typography system.
 - VF-005 — Use color purposefully and accessibly.

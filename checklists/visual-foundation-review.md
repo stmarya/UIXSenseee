@@ -25,6 +25,21 @@
 - [ ] Narrow layouts, zoom, localization, alternate themes, and high contrast preserve priority.
 - [ ] Decoration remains subordinate to required information and action.
 
+## VF-002 — Layout, grid, and alignment
+
+- [ ] Page regions and columns support task hierarchy rather than arbitrary symmetry.
+- [ ] Related content shares meaningful alignment anchors.
+- [ ] Labels, values, controls, and actions remain spatially associated.
+- [ ] Visual, semantic, reading, and keyboard order align.
+- [ ] Text, forms, tables, charts, and controls have purpose-appropriate widths.
+- [ ] Narrow layouts and zoom reflow without changing meaning.
+- [ ] Page-level horizontal scrolling is avoided; bounded component overflow is clear.
+- [ ] Sticky and fixed regions do not cover content, focus, errors, or anchors.
+- [ ] Comparable values and records align for accurate scanning.
+- [ ] Card placement reflects relationships rather than filling the grid.
+- [ ] Variable and translated content does not overlap or lose meaning.
+- [ ] Overlays remain anchored, dismissible, and within usable viewport bounds.
+
 ## Decision
 
 - [ ] Every failed item includes evidence, severity, primary rule ID, correction, owner, and verification method.

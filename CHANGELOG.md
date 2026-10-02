@@ -6,6 +6,7 @@
 
 - Visual Foundation document structure, terminology, principles, and evidence basis.
 - VF-001: Establish purposeful visual hierarchy.
+- VF-002: Use coherent layout, grid, and alignment.
 - Initial Visual Foundation review checklist.
 
 - IA-003: Use clear, descriptive, and consistent labels.
