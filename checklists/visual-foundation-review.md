@@ -10,6 +10,8 @@
 - [ ] Target users, tasks, risk, and content density are stated.
 - [ ] The reviewed screens, states, themes, and viewport conditions are listed.
 - [ ] Relevant VF rules are selected and exclusions are explained.
+- [ ] One primary owner rule is selected for findings that overlap AX, RS, DV, IN, CT, or EP.
+- [ ] Reviewed evidence includes semantic order, zoom/reflow, themes, rare states, and variable content where applicable.
 
 ## VF-001 — Visual hierarchy
 
@@ -32,7 +34,7 @@
 - [ ] Labels, values, controls, and actions remain spatially associated.
 - [ ] Visual, semantic, reading, and keyboard order align.
 - [ ] Text, forms, tables, charts, and controls have purpose-appropriate widths.
-- [ ] Narrow layouts and zoom reflow without changing meaning.
+- [ ] Narrow layouts, 200% text resizing, and 400% page zoom/reflow where applicable preserve content and meaning.
 - [ ] Page-level horizontal scrolling is avoided; bounded component overflow is clear.
 - [ ] Sticky and fixed regions do not cover content, focus, errors, or anchors.
 - [ ] Comparable values and records align for accurate scanning.
@@ -59,7 +61,7 @@
 ## VF-005 — Color
 
 - [ ] Color roles are semantic and documented.
-- [ ] Text and non-text contrast meet applicable requirements.
+- [ ] Normal text reaches 4.5:1, large text reaches 3:1, and applicable non-text boundaries reach 3:1, subject to documented WCAG exceptions.
 - [ ] Status, selection, errors, and chart series do not rely on color alone.
 - [ ] Focus remains visible on every surface and state.
 - [ ] Light, dark, high-contrast, transparency, and data palettes preserve meaning.

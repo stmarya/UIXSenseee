@@ -1,7 +1,7 @@
 # Visual Foundation
 
 - **Document ID:** UIXS-VF
-- **Version:** 0.8.0
+- **Version:** 0.8.1
 - **Status:** Draft
 - **Related standards:** FP, IA, AX, RS, DV, QA
 - **Owner:** UIXSenseee maintainers
@@ -23,8 +23,8 @@
 - [VF-006 — Use surfaces, borders, shape, and elevation to communicate structure](#vf-006--use-surfaces-borders-shape-and-elevation-to-communicate-structure)
 - [VF-007 — Use clear and consistent iconography and imagery](#vf-007--use-clear-and-consistent-iconography-and-imagery)
 - [VF-008 — Maintain visual consistency across states and themes](#vf-008--maintain-visual-consistency-across-states-and-themes)
+- [Rule boundaries](#rule-boundaries)
 - [Visual Foundation conformance](#visual-foundation-conformance)
-- [Planned rules](#planned-rules)
 - [Evidence basis](#evidence-basis)
 
 ## Purpose
@@ -130,7 +130,7 @@ This order MAY change when the user's primary task is investigation, triage, or 
 - **Semantic-order test:** compare visual order with headings, DOM/reading order, and keyboard focus.
 - **Action-priority test:** ask users to distinguish primary, secondary, and destructive actions.
 - **Content-stress test:** use long labels, large values, missing data, errors, and multiple alerts.
-- **Adaptation test:** inspect narrow screens, 200% zoom or more, alternate theme, high contrast, and text expansion.
+- **Adaptation test:** inspect narrow screens, 200% text resizing, 400% page zoom/reflow where applicable, alternate themes, high contrast, and localization.
 - **Dashboard scan test:** ask users to identify scope, period, status, anomaly, comparison, and evidence.
 
 ### Exceptions
@@ -220,7 +220,7 @@ Document the intended structure of each major screen:
 
 - **Alignment audit:** draw major vertical and horizontal anchors and identify unexplained offsets.
 - **Reading-order audit:** compare visual order with document, screen-reader, and keyboard order.
-- **Reflow test:** inspect narrow widths and at least 200% zoom without page-level horizontal loss.
+- **Reflow test:** inspect 200% text resizing and 400% page zoom/reflow where applicable without page-level horizontal loss.
 - **Content stress test:** use long translations, maximum values, error messages, missing data, and multiple actions.
 - **Comparison test:** verify comparable metrics and records can be scanned along consistent axes.
 - **Sticky-region test:** navigate anchors and keyboard focus while persistent regions are present.
@@ -391,7 +391,7 @@ Color can establish hierarchy, brand, status, and data relationships, but percep
 ### Requirements
 
 - **VF-005-A — Define color roles as tokens — MUST.** Separate brand, neutral, text, surface, border, interaction, focus, semantic status, and data-visualization roles.
-- **VF-005-B — Meet text contrast — MUST.** Normal text requires at least 4.5:1 and large text at least 3:1 against its background, subject to applicable WCAG exceptions.
+- **VF-005-B — Meet text contrast — MUST.** Normal text requires at least 4.5:1 and large text at least 3:1 against its background, subject to applicable WCAG exceptions. For this rule, large text follows the WCAG definition: at least 18 point (approximately 24 CSS pixels), or 14 point (approximately 18.66 CSS pixels) when bold.
 - **VF-005-C — Meet non-text contrast — MUST.** Required component boundaries, states, graphical objects, and focus indicators require sufficient contrast, generally at least 3:1 where WCAG applies.
 - **VF-005-D — Do not use color alone — MUST NOT.** Status, selection, errors, chart series, and required fields require text, icon, shape, pattern, position, or another cue.
 - **VF-005-E — Keep semantic meaning consistent — MUST.** Success, warning, danger, information, selected, and disabled colors must not change meaning across screens.
@@ -619,6 +619,21 @@ Native platform conventions MAY differ when they improve expected behavior and a
 
 ---
 
+## Rule boundaries
+
+Visual Foundation intentionally touches accessibility, responsive behavior, interaction, content, and data visualization. Use this ownership model to prevent conflicting standards and duplicate findings:
+
+- **VF-001 owns visual prominence:** what attracts attention and how priority is perceived. IA owns information order; AX owns whether critical information is perceivable to users with disabilities.
+- **VF-002 owns spatial composition:** page regions, visual alignment, and visual/semantic order. RS owns breakpoint and adaptive behavior; AX owns reflow conformance and assistive reading order.
+- **VF-003 owns visible spacing and density:** grouping, rhythm, and compactness. AX owns minimum operability and target-size conformance.
+- **VF-004 owns typographic presentation:** role, readability, scale, measure, and numeric formatting. CT owns wording; AX owns accessibility success criteria.
+- **VF-005 owns visual color roles and palettes:** contrast implementation, semantic color, and theme color behavior. AX is authoritative for accessibility conformance; DV owns data encoding and chart-palette selection by analytical purpose.
+- **VF-006 owns visible layers and boundaries:** surfaces, borders, shape, and elevation. IN owns overlay behavior, dismissal, and state transitions.
+- **VF-007 owns icon and image presentation:** visual meaning, style, and association. CT owns labels; AX owns alternatives and accessible naming; EP owns ethical use and disclosure.
+- **VF-008 owns cross-screen visual consistency:** tokens, visual states, and theme equivalence. IN owns component behavior and feedback timing; AX owns focus and assistive behavior conformance.
+
+When one problem crosses standards, record one primary finding under the owning rule and list other rules as related. Accessibility requirements take precedence where visual guidance conflicts with conformance criteria.
+
 ## Visual Foundation conformance
 
 A design conforms to this document only when every relevant MUST and MUST NOT requirement from VF-001 through VF-008 is satisfied or has an approved exception. SHOULD findings may produce Conditional Pass when they do not block safe task completion and have an owner, rationale, and review date.
@@ -647,3 +662,8 @@ A design conforms to this document only when every relevant MUST and MUST NOT re
 - [W3C WCAG 2.2: Non-text Contrast](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html) — contrast for controls and meaningful graphics.
 - [W3C WCAG 2.2: Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html) — preserve content and operation under narrow presentation and zoom.
 - [Material Design 3: Interaction States](https://m3.material.io/foundations/interaction/states) — consistent component-state communication.
+
+
+## Audit status
+
+Internal structural audit passed for Draft status on 2026-10-01. The standard contains eight main rules and 147 unique sub-rules. Controlled workflow validation and rendered-interface testing remain required before Candidate status. See `audits/2026-10-01-visual-foundation.md`.

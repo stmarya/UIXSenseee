@@ -14,6 +14,15 @@
 - VF-007: Use clear and consistent iconography and imagery.
 - VF-008: Maintain visual consistency across states and themes.
 - Visual Foundation conformance and required-evidence section.
+- Visual Foundation internal audit report.
+- Cross-standard ownership model for VF, AX, RS, DV, IN, CT, and EP.
+
+### Fixed
+
+- Removed a stale Planned rules link from the Visual Foundation contents.
+- Clarified 200% text resizing versus 400% page zoom/reflow validation.
+- Defined WCAG large-text thresholds for contrast evaluation.
+- Expanded Visual Foundation checklist applicability, contrast, and reflow evidence.
 - Initial Visual Foundation review checklist.
 
 - IA-003: Use clear, descriptive, and consistent labels.
