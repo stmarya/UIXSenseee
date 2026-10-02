@@ -2,7 +2,7 @@
 
 - **Last updated:** 2026-10-01
 - **Current phase:** Phase 2 — Interaction Architecture
-- **Overall progress toward Stable:** 20%
+- **Overall progress toward Stable:** 23%
 - **Canonical progress record:** `STATUS.md`
 
 This document divides all remaining work into ordered delivery phases. A phase may begin in preparation before the previous phase is fully Stable, but it may not be marked complete until its exit criteria are satisfied.
@@ -20,7 +20,7 @@ This document divides all remaining work into ordered delivery phases. A phase m
 |---:|---|---|---|---|
 | 0 | Repository Foundation | Skill, governance, templates, status tracking | Completed | Baseline infrastructure available |
 | 1 | Core Foundations | FP, IA, VF | Completed | FP, IA, and VF Candidate |
-| 2 | Interaction Architecture | IN, CB | In progress | Starting Interaction Standards |
+| 2 | Interaction Architecture | IN, CB | In progress | Interaction Standards Draft; IN-001 complete |
 | 3 | Inclusive & Adaptive Systems | AX, RS | Planned | Not started |
 | 4 | Data & Communication | DV, CT | Planned | Not started |
 | 5 | Trust & Release Governance | EP, QA | Planned | Not started |
@@ -100,7 +100,7 @@ Phase 1 Candidate exit criteria are complete. Stable evidence remains scheduled 
 ## Phase 2 — Interaction Architecture
 
 **Status:** In progress
-**Immediate next action:** Create Interaction Standards structure and IN-001.
+**Immediate next action:** Draft IN-002 — Provide clear affordances and signifiers.
 
 ### Scope
 
@@ -132,6 +132,16 @@ Phase 1 Candidate exit criteria are complete. Stable evidence remains scheduled 
 - Table
 - Search and filter
 - Pagination
+
+### Progress
+
+- [x] Interaction Standards document structure
+- [x] IN-001 — Make interactions discoverable and predictable
+- [ ] IN-002 through IN-010
+- [ ] Interaction Standards internal audit
+- [ ] Interaction Standards workflow validation
+- [ ] Interaction Standards Candidate promotion
+- [ ] Component Behavior draft, audit, validation, and Candidate promotion
 
 ### Deliverables
 

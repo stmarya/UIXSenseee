@@ -4,6 +4,10 @@
 
 ### Added
 
+- Interaction Standards document structure, terminology, principles, and evidence basis.
+- IN-001: Make interactions discoverable and predictable.
+- Initial Interaction Standards review checklist.
+
 - Controlled Foundation Principles workflow validation and regression fixtures.
 
 - Expanded Foundation Principles with scope, terminology, verification, failure examples, rule boundaries, conformance, and evidence basis.
@@ -29,6 +33,9 @@
 - Visual Foundation regression fixtures.
 
 ### Changed
+
+- Updated weighted project progress from 20% to 23% and document coverage from 27% to 36%.
+
 
 - Promoted Foundation Principles from Audited Draft to Candidate.
 - Completed Phase 1 Core Foundations and started Phase 2 Interaction Architecture.

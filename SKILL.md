@@ -38,6 +38,8 @@ Mark missing information as an assumption. Do not silently invent business requi
 
 - Information structure, navigation, hierarchy, labels, findability: `references/01-information-architecture.md`
 - Visual hierarchy, layout, spacing, typography, color, surfaces, and iconography: `references/02-visual-foundation.md`
+- Interaction discoverability, feedback, states, loading, motion, errors, recovery, and input modalities: `references/03-interaction-standards.md`
+- Interaction Standards review: `checklists/interaction-standards-review.md`
 - Visual Foundation review: `checklists/visual-foundation-review.md`
 - Information Architecture audit: `checklists/information-architecture-review.md`
 - General design review: `checklists/design-review.md`

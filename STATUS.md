@@ -2,9 +2,9 @@
 
 - **Last updated:** 2026-10-01
 - **Current phase:** Phase 2 — Interaction Architecture
-- **Current focus:** Create Interaction Standards structure and IN-001
+- **Current focus:** Draft IN-002 — Provide clear affordances and signifiers
 - **Next standard:** Interaction Standards
-- **Overall progress toward Stable:** 20%
+- **Overall progress toward Stable:** 23%
 
 This file is the canonical handoff and progress record for contributors and AI agents. Read it before starting work and update it in the same commit as any status-changing work.
 
@@ -12,10 +12,10 @@ This file is the canonical handoff and progress record for contributors and AI a
 
 | Metric | Current | Calculation |
 |---|---:|---|
-| Standard areas with a document | 3 of 11 | 27% |
+| Standard areas with a document | 4 of 11 | 36% |
 | Standard areas at Candidate | 2 of 11 | 18% |
 | Standard areas at Stable | 0 of 11 | 0% |
-| Weighted progress toward Stable | 225 of 1,100 points | 20% rounded |
+| Weighted progress toward Stable | 250 of 1,100 points | 23% rounded |
 
 ## Lifecycle and weights
 
@@ -34,9 +34,10 @@ This file is the canonical handoff and progress record for contributors and AI a
 Foundation Principles:      Candidate = 75
 Information Architecture:  Candidate = 75
 Visual Foundation:          Candidate = 75
-Eight remaining areas:      Not started = 0
+Interaction Standards:     Draft = 25
+Seven remaining areas:      Not started = 0
 
-Total: 225 / (11 × 100) = 20.5% → 20%
+Total: 250 / (11 × 100) = 22.7% → 23%
 ```
 
 ## Phase roadmap
@@ -47,7 +48,7 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 |---:|---|---|---|
 | 0 | Repository Foundation | Completed | Infrastructure and handoff available |
 | 1 | Core Foundations | Completed | FP, IA, and VF Candidate |
-| 2 | Interaction Architecture | In progress | Starting Interaction Standards |
+| 2 | Interaction Architecture | In progress | Interaction Standards Draft; IN-001 complete |
 | 3 | Inclusive & Adaptive Systems | Planned | AX and RS not started |
 | 4 | Data & Communication | Planned | DV and CT not started |
 | 5 | Trust & Release Governance | Planned | EP and QA not started |
@@ -60,7 +61,7 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 | 1 | Foundation Principles | `references/00-foundation-principles.md` | Candidate | Passed | Passed | Pending | Revisit integrated Stable evidence in Phase 6 |
 | 2 | Information Architecture | `references/01-information-architecture.md` | Candidate | Passed | Passed | Pending | Rendered dashboard, keyboard/screen-reader, tree testing, localization |
 | 3 | Visual Foundation | `references/02-visual-foundation.md` | Candidate | Passed | Passed | Pending | Rendered hierarchy, contrast, focus, reflow, icon, and theme tests |
-| 4 | Interaction Standards | `references/03-interaction-standards.md` | Not started | — | — | — | Create structure and IN-001 after Foundation Principles reaches Candidate |
+| 4 | Interaction Standards | `references/03-interaction-standards.md` | Draft | Pending | Pending | Pending | Draft IN-002, then complete remaining IN rules |
 | 5 | Component Behavior | `references/04-component-behavior.md` | Not started | — | — | — | Start after Interaction Standards draft |
 | 6 | Dashboard & Data Visualization | `references/05-dashboard-data-visualization.md` | Not started | — | — | — | Define KPI, chart, axis, filter, uncertainty, and data-honesty rules |
 | 7 | Accessibility | `references/06-accessibility.md` | Not started | — | — | — | Establish WCAG 2.2 AA baseline and cross-standard authority |
@@ -103,13 +104,13 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 
 ## Immediate work queue
 
-### Priority 1 — Interaction Standards foundation
+### Priority 1 — Complete Interaction Standards draft
 
-1. Create `references/03-interaction-standards.md`.
-2. Define purpose, scope, terminology, ownership boundaries, and planned IN rules.
-3. Draft IN-001 — Make interactions discoverable and predictable.
-4. Create or extend the rule-mapped Interaction checklist.
-5. Update `STATUS.md`, `PHASES.md`, and `CHANGELOG.md` in the same commit.
+1. Draft IN-002 — Provide clear affordances and signifiers.
+2. Continue IN-003 through IN-010.
+3. Complete conformance, ownership boundaries, and required evidence.
+4. Run internal audit and controlled workflow validation.
+5. Promote Interaction Standards to Candidate if validation passes.
 
 ### Priority 2 — Remaining Phase 2 standards
 
