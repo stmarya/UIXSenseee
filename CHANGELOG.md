@@ -4,6 +4,8 @@
 
 ### Added
 
+- Component Behavior internal audit, workflow validation, and regression fixtures.
+
 - Complete Component Behavior draft CB-001 through CB-010 and a rule-mapped review checklist.
 
 - Interaction Standards internal audit, controlled workflow validation, and regression fixtures.
@@ -40,6 +42,11 @@
 - Visual Foundation regression fixtures.
 
 ### Changed
+
+- Promoted Component Behavior from Draft to Candidate.
+- Completed Phase 2 Interaction Architecture and started Phase 3 Inclusive & Adaptive Systems.
+- Updated weighted project progress from 30% to 34%.
+
 
 - Updated weighted project progress from 27% to 30% and document coverage from 36% to 45%.
 

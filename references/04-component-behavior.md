@@ -1,8 +1,8 @@
 # Component Behavior
 
 - **Document ID:** UIXS-CB
-- **Version:** 0.10.0
-- **Status:** Draft
+- **Version:** 0.11.0
+- **Status:** Candidate
 - **Owner:** UIXSenseee maintainers
 - **Last updated:** 2026-10-01
 - **Related standards:** FP, IA, VF, IN, AX, RS, CT, EP, QA
@@ -471,3 +471,8 @@ A design conforms only when every relevant MUST and MUST NOT requirement from CB
 - [WAI Forms Tutorials](https://www.w3.org/WAI/tutorials/forms/)
 - [GOV.UK Design System Components](https://design-system.service.gov.uk/components/)
 - [Nielsen Norman Group: 10 Usability Heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/)
+
+
+## Validation status
+
+Internal audit and controlled workflow validation passed on 2026-10-01. Component Behavior is Candidate with 10 main rules and 84 unique sub-rules. Rendered component, accessibility, responsive, localization, and representative-user evidence remain required before Stable status.

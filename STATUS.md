@@ -1,10 +1,10 @@
 # UIXSenseee Project Status
 
 - **Last updated:** 2026-10-01
-- **Current phase:** Phase 2 — Interaction Architecture
-- **Current focus:** Run Component Behavior internal audit and workflow validation
+- **Current phase:** Phase 3 — Inclusive & Adaptive Systems
+- **Current focus:** Create Accessibility standard structure and AX-001
 - **Next standard:** Interaction Standards
-- **Overall progress toward Stable:** 30%
+- **Overall progress toward Stable:** 34%
 
 This file is the canonical handoff and progress record for contributors and AI agents. Read it before starting work and update it in the same commit as any status-changing work.
 
@@ -13,9 +13,9 @@ This file is the canonical handoff and progress record for contributors and AI a
 | Metric | Current | Calculation |
 |---|---:|---|
 | Standard areas with a document | 5 of 11 | 45% |
-| Standard areas at Candidate | 4 of 11 | 36% |
+| Standard areas at Candidate | 5 of 11 | 45% |
 | Standard areas at Stable | 0 of 11 | 0% |
-| Weighted progress toward Stable | 325 of 1,100 points | 30% rounded |
+| Weighted progress toward Stable | 375 of 1,100 points | 34% rounded |
 
 ## Lifecycle and weights
 
@@ -35,10 +35,10 @@ Foundation Principles:      Candidate = 75
 Information Architecture:  Candidate = 75
 Visual Foundation:          Candidate = 75
 Interaction Standards:     Candidate = 75
-Component Behavior:        Draft = 25
+Component Behavior:        Candidate = 75
 Six remaining areas:        Not started = 0
 
-Total: 325 / (11 × 100) = 29.5% → 30%
+Total: 375 / (11 × 100) = 34.1% → 34%
 ```
 
 ## Phase roadmap
@@ -49,8 +49,8 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 |---:|---|---|---|
 | 0 | Repository Foundation | Completed | Infrastructure and handoff available |
 | 1 | Core Foundations | Completed | FP, IA, and VF Candidate |
-| 2 | Interaction Architecture | In progress | IN Candidate; CB Draft complete |
-| 3 | Inclusive & Adaptive Systems | Planned | AX and RS not started |
+| 2 | Interaction Architecture | Completed | IN and CB Candidate |
+| 3 | Inclusive & Adaptive Systems | In progress | Starting Accessibility |
 | 4 | Data & Communication | Planned | DV and CT not started |
 | 5 | Trust & Release Governance | Planned | EP and QA not started |
 | 6 | Integration & Stable Release | Planned | Starts after all standards reach Candidate |
@@ -63,7 +63,7 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 | 2 | Information Architecture | `references/01-information-architecture.md` | Candidate | Passed | Passed | Pending | Rendered dashboard, keyboard/screen-reader, tree testing, localization |
 | 3 | Visual Foundation | `references/02-visual-foundation.md` | Candidate | Passed | Passed | Pending | Rendered hierarchy, contrast, focus, reflow, icon, and theme tests |
 | 4 | Interaction Standards | `references/03-interaction-standards.md` | Candidate | Passed | Passed | Pending | Revisit Stable evidence in Phase 6 |
-| 5 | Component Behavior | `references/04-component-behavior.md` | Draft | Pending | Pending | Pending | Run internal audit and workflow validation |
+| 5 | Component Behavior | `references/04-component-behavior.md` | Candidate | Passed | Passed | Pending | Revisit Stable evidence in Phase 6 |
 | 6 | Dashboard & Data Visualization | `references/05-dashboard-data-visualization.md` | Not started | — | — | — | Define KPI, chart, axis, filter, uncertainty, and data-honesty rules |
 | 7 | Accessibility | `references/06-accessibility.md` | Not started | — | — | — | Establish WCAG 2.2 AA baseline and cross-standard authority |
 | 8 | Responsive & Adaptive Design | `references/07-responsive-adaptive-design.md` | Not started | — | — | — | Define reflow, priority, input modality, tables, charts, and density |
@@ -105,18 +105,16 @@ Detailed scope and exit criteria are maintained in [`PHASES.md`](PHASES.md).
 
 ## Immediate work queue
 
-### Priority 1 — Build Component Behavior
+### Priority 1 — Accessibility foundation
 
-1. Create `references/04-component-behavior.md` and a rule-mapped checklist.
-2. Define button/link, forms, selection, tabs/disclosure, overlays, tooltip, notifications, tables, search/filter/pagination, and navigation/menu behavior.
-3. Complete internal audit and workflow validation.
-4. Promote Component Behavior to Candidate and close Phase 2.
+1. Create `references/06-accessibility.md` and a rule-mapped checklist.
+2. Establish WCAG 2.2 AA baseline and AX ownership authority.
+3. Draft AX-001 and the remaining accessibility rule plan.
+4. Update `STATUS.md`, `PHASES.md`, and `CHANGELOG.md` in the same commit.
 
-### Priority 2 — Remaining Phase 2 standards
+### Priority 2 — Responsive & Adaptive Design
 
-1. Complete Interaction Standards through internal audit and workflow validation.
-2. Create Component Behavior after the Interaction draft is structurally established.
-3. Promote IN and CB to Candidate before Phase 3.
+Begin RS after the Accessibility ownership model and baseline are structurally established.
 
 ## Stable-status work still required
 
