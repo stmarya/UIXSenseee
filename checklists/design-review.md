@@ -29,4 +29,11 @@
 - [ ] Sorting changes order only, not collection membership.
 - [ ] Categories at the same level have distinct meanings.
 - [ ] Heading hierarchy matches content hierarchy.
+- [ ] Primary state, required input, and primary action are visible.
+- [ ] Cost, risk, consent, destructive consequences, and material uncertainty are visible before commitment.
+- [ ] Disclosure triggers describe what they reveal.
+- [ ] Partial, sampled, aggregated, or truncated data is identified.
+- [ ] Essential content does not depend on hover.
+- [ ] Disclosure controls expose state and work with keyboard, touch, and assistive technology.
+- [ ] Responsive collapse preserves warnings, active scope, and required actions.
 - [ ] Exceptions are documented.

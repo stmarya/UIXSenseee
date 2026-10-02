@@ -1,7 +1,7 @@
 # Information Architecture
 
 - **Document ID:** UIXS-IA
-- **Version:** 0.4.0
+- **Version:** 0.5.0
 - **Status:** Draft
 - **Related standards:** FP, CT, AX, RS, QA
 
@@ -432,7 +432,84 @@ State MAY reset for security, expired permissions, incompatible datasets, delibe
 
 Fail when silent context loss causes repeated work, analytical meaning changes without disclosure, users can act in the wrong scope, sensitive state is persisted unsafely, or unsaved meaningful work is discarded without protection. Otherwise, all MUST requirements and documented exceptions determine conformance.
 
+---
+
+## IA-007 — Apply progressive disclosure without hiding critical information
+
+**Level:** SHOULD  
+**Status:** Draft  
+**Related:** FP-002, FP-005, FP-006, FP-007, FP-009, FP-013, IA-P03, IA-P06
+
+### Rule
+
+The interface SHOULD reveal complexity progressively while keeping information, consequences, and controls required for safe and successful task completion visible at the point of need.
+
+### Rationale
+
+Progressive disclosure reduces initial cognitive load by showing primary information and actions first, then revealing secondary or advanced detail when requested. It must simplify presentation without concealing risk, cost, consent, status, or information needed to make a valid decision.
+
+### Disclosure layers
+
+- **Primary:** required to understand the current state or complete the main task.
+- **Secondary:** useful context, comparison, explanation, or less-frequent controls.
+- **Advanced:** expert configuration, diagnostic detail, or exceptional workflows.
+- **Critical:** safety, cost, privacy, destructive consequences, uncertainty, legal constraints, and blocking errors. Critical content is never demoted merely to make a layout cleaner.
+
+### Requirements
+
+- **IA-007-A — Keep primary information visible — MUST.** The current state, primary task, required input, and primary action must not depend on hidden content.
+- **IA-007-B — Keep critical information visible — MUST.** Cost, risk, consent, destructive consequences, material uncertainty, blocking errors, and irreversible effects must appear before commitment.
+- **IA-007-C — Disclose secondary detail on demand — SHOULD.** Supporting explanation, metadata, and infrequent controls may use expanders, detail views, tabs, drawers, or drill-down.
+- **IA-007-D — Use descriptive disclosure triggers — MUST.** Prefer “Show metric definition,” “View 12 affected teams,” or “Advanced filters” over “More” or an unexplained icon.
+- **IA-007-E — Communicate hidden content — MUST.** Users must be able to tell that more content exists and what type of content will be revealed.
+- **IA-007-F — Preserve disclosure state when relevant — SHOULD.** Expanded sections, selected tabs, and advanced panels should remain open through closely related tasks when doing so supports continuity.
+- **IA-007-G — Avoid excessive nesting — SHOULD NOT.** Do not place critical or frequently used content behind multiple disclosure layers. Each additional layer requires a distinct purpose.
+- **IA-007-H — Do not rely on hover — MUST NOT.** Essential disclosed content and controls must be available through keyboard, touch, and persistent interaction.
+- **IA-007-I — Keep help near the point of need — SHOULD.** Definitions, examples, and input guidance should be available where users encounter the concept, without replacing clear labels.
+- **IA-007-J — Distinguish summary from complete data — MUST.** Truncated lists, sampled data, aggregated values, and partial results must state that they are incomplete and provide a route to the full view.
+- **IA-007-K — Reveal validation at an appropriate time — MUST.** Required format and constraints appear before input; errors appear after meaningful interaction and remain until resolved.
+- **IA-007-L — Adapt to expertise without hiding recovery — MAY.** Novice guidance and advanced shortcuts may differ, but escape, undo, safety, and critical context remain available to all users.
+- **IA-007-M — Make disclosure accessible — MUST.** Triggers communicate expanded/collapsed state, control the correct region, receive keyboard focus, and preserve logical reading order.
+- **IA-007-N — Preserve meaning on small screens — MUST.** Responsive collapse may reduce simultaneous detail but must not remove primary status, active scope, critical warnings, or required actions.
+- **IA-007-O — Do not use disclosure as a dark pattern — MUST NOT.** Do not hide rejection, cancellation, fees, privacy choices, limitations, or safer alternatives behind weaker or less discoverable controls.
+
+### Pattern selection
+
+- **Accordion/expander:** independent supporting sections; avoid for a required linear story.
+- **Tabs:** peer views of the same object; do not use when users must compare hidden content simultaneously.
+- **Drawer/panel:** secondary controls or detail while retaining the parent context.
+- **Tooltip/popover:** brief supplemental explanation; never the sole location for critical or required information.
+- **Drill-down/detail page:** complex detail that deserves its own navigation state.
+- **Show more:** additional items in a known collection; state hidden item count when useful.
+- **Advanced settings:** infrequent expert controls with safe defaults and a clear reset path.
+
+### Dashboard policy
+
+KPI name, value, unit, period, comparison, status, and material data-quality warnings remain visible. Definitions, calculation details, contributing dimensions, and record-level evidence may be disclosed progressively. Hidden filters or aggregation rules must not alter interpretation.
+
+### Validation
+
+Run first-view comprehension, task-completion, hidden-critical-information, disclosure-discoverability, nested-layer, keyboard, screen-reader, touch, responsive, and compare-content tests. Ask users what is hidden, how to reveal it, and whether they can decide safely before expanding anything.
+
+### Exceptions
+
+Security, privacy, age-appropriate design, and expert workflows MAY limit initial detail. The interface must still communicate that information is restricted, why when safe, and how authorized users can access it. Legal text may be summarized only when the binding terms and material consequences remain available before consent.
+
+### Failure examples
+
+- Fees shown only after final confirmation.
+- A destructive consequence hidden under “Learn more.”
+- Required field format available only in a tooltip.
+- Several nested accordions hiding frequently used controls.
+- A chart summary that does not disclose sampling or incomplete data.
+- Active filters hidden inside a closed advanced panel.
+- Cancellation placed behind visually weak, repeated disclosure steps.
+- Mobile layouts removing warnings shown on desktop.
+
+### Acceptance
+
+Fail when critical information, required actions, active analytical context, or safe refusal is hidden; essential content depends on hover; partial data appears complete; or disclosure is inaccessible. Conditional Pass may cover discoverability or state-persistence improvements that do not block safe task completion. Otherwise, all MUST requirements and documented exceptions determine conformance.
+
 ## Planned rules
 
-- IA-007 — Apply progressive disclosure without hiding critical information.
 - IA-008 — Design scalable taxonomies.
