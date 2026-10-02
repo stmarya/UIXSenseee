@@ -16,6 +16,13 @@
 - Visual Foundation conformance and required-evidence section.
 - Visual Foundation internal audit report.
 - Cross-standard ownership model for VF, AX, RS, DV, IN, CT, and EP.
+- Controlled Visual Foundation workflow validation across three representative scenarios.
+- Visual Foundation regression fixtures.
+
+### Changed
+
+- Promoted Visual Foundation from Draft to Candidate after workflow validation.
+- Expanded the Visual Foundation checklist output contract for cross-standard findings.
 
 ### Fixed
 

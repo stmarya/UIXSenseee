@@ -23,7 +23,7 @@ UIXSenseee is a technology-agnostic UI/UX standard and review skill for humans a
 
 ## Current status
 
-Version `0.1.0-draft`. Foundation Principles and the audited Information Architecture draft (IA-001 through IA-008) are available. The Information Architecture standard is Candidate after internal audit and controlled workflow validation. The complete Visual Foundation draft (VF-001 through VF-008) has passed internal structural audit and awaits controlled workflow validation before Candidate status.
+Version `0.1.0-draft`. Foundation Principles and the audited Information Architecture draft (IA-001 through IA-008) are available. The Information Architecture standard is Candidate after internal audit and controlled workflow validation. The Visual Foundation standard (VF-001 through VF-008) is Candidate after internal audit and controlled workflow validation. Rendered-interface, accessibility, localization, and representative-user validation remain required before Stable status.
 
 ## Planned standards
 

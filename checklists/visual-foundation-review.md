@@ -12,6 +12,8 @@
 - [ ] Relevant VF rules are selected and exclusions are explained.
 - [ ] One primary owner rule is selected for findings that overlap AX, RS, DV, IN, CT, or EP.
 - [ ] Reviewed evidence includes semantic order, zoom/reflow, themes, rare states, and variable content where applicable.
+- [ ] Each finding includes visual evidence, primary VF rule, related standards, user impact, correction, and verification method.
+- [ ] Accessibility, responsive, data, interaction, content, and ethics concerns remain related unless their own behavior is independently audited.
 
 ## VF-001 — Visual hierarchy
 
